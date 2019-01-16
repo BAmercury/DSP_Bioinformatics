@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>Lab1</title><meta name="generator" content="MATLAB 9.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-01-15"><meta name="DC.source" content="Lab1.m"><style type="text/css">
+      --><title>Lab1</title><meta name="generator" content="MATLAB 9.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-01-16"><meta name="DC.source" content="Lab1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,37 +66,297 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Part 1.1.1 Download sequence with accession number and load into MATLAB</a></li><li><a href="#4">Part 1.2.1 Getting basic statistics</a></li><li><a href="#12">Part 3: Condon Count and ORF</a></li></ul></div><h2 id="1">Part 1.1.1 Download sequence with accession number and load into MATLAB</h2><p>Retrieve sequence, save to file</p><pre class="codeinput">clc;close <span class="string">all</span>; clear;
-getgenbank(<span class="string">'nm_000520'</span>, <span class="string">'toFile'</span>, <span class="string">'nm_000520.txt'</span>);
-</pre><pre class="codeoutput">Warning: nm_000520.txt already exists. The
-data will be appended to the file. 
-</pre><p>Bring file into matlab</p><pre class="codeinput">s = genbankread(<span class="string">'nm_000520.txt'</span>);
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Part 1.1.1 Download sequence with accession number and load into MATLAB</a></li><li><a href="#4">Part 1.2.1 Getting basic statistics</a></li><li><a href="#12">Part 1.3.1: Condon Count and ORF</a></li><li><a href="#14">Part 1.3.1: Find ORFs based on length</a></li><li><a href="#17">Part 1.3.2 Finding optimum threshold for ORFs</a></li><li><a href="#22">General Functions</a></li></ul></div><h2 id="1">Part 1.1.1 Download sequence with accession number and load into MATLAB</h2><p>Retrieve sequence, save to file</p><pre class="codeinput">clc;close <span class="string">all</span>; clear;
+</pre><p>Check if file already exists, if it doesn't. Download file from genbank</p><pre class="codeinput"><span class="keyword">if</span> exist(<span class="string">'nm_000520.txt'</span>) == 2
+    <span class="comment">% Bring file into matlab</span>
+    s = genbankread(<span class="string">'nm_000520.txt'</span>);
+<span class="keyword">else</span>
+    <span class="comment">% Grab file and then bring it into matlab</span>
+    getgenbank(<span class="string">'nm_000520'</span>, <span class="string">'toFile'</span>, <span class="string">'nm_000520.txt'</span>);
+    s = genbankread(<span class="string">'nm_000520.txt'</span>);
+<span class="keyword">end</span>
 </pre><p>Extract sequence</p><pre class="codeinput">seq = getgenbank(<span class="string">'nm_000520'</span>, <span class="string">'SequenceOnly'</span>, true);
 </pre><h2 id="4">Part 1.2.1 Getting basic statistics</h2><p>Format long sequence output</p><pre class="codeinput">seqdisp(s.Sequence)
-</pre><pre class="codeoutput error">Error using seqdisp (line 55)
-Unknown parameter name: tcacatcacaacgacttgtggttttaatcctccgtttttctgcttctgaagttacttcagcctggcaagtcctttacctccccgtaggcctggcgagctgcatcacaacattcaagattcaccctagagccatctgggaaactttcttctccaggtcgccctgcgtcctcgcctccccaccccgttcttctcgagtcgggtgagctgtctagttccatcacggccggcacggccgcaggggtggccggttatttactgctctactgggcccgtgaacagtctggcgagccgagcagttgccgacgcccggcacaatccgctgcacgtagcaggagcctcaggtccaggccggaagtgaaagggcagggtgtgggtcctcctggggtcgcaggcgcagagccgcctctggtcacgtgattcgccgataagtcacgggggcgccgctcacctgaccagggtctcacgtggccagccccctccgagaggggagaccagcgggccatgacaagctccaggctttggttttcgctgctgctggcggcagcgttcgcaggacgggcgacggccctctggccctggcctcagaacttccaaacctccgaccagcgctacgtcctttacccgaacaactttcaattccagtacgatgtcagctcggccgcgcagcccggctgctcagtcctcgacgaggccttccagcgctatcgtgacctgcttttcggttccgggtcttggccccgtccttacctcacagggaaacggcatacactggagaagaatgtgttggttgtctctgtagtcacacctggatgtaaccagcttcctactttggagtcagtggagaattataccctgaccataaatgatgaccagtgtttactcctctctgagactgtctggggagctctccgaggtctggagacttttagccagcttgtttggaaatctgctgagggcacattctttatcaacaagactgagattgaggactttccccgctttcctcaccggggcttgctgttggatacatctcgccattacctgccactctctagcatcctggacactctggatgtcatggcgtacaataaattgaacgtgttccactggcatctggtagatgatccttccttcccatatgagagcttcacttttccagagctcatgagaaaggggtcctacaaccctgtcacccacatctacacagcacaggatgtgaaggaggtcattgaatacgcacggctccggggtatccgtgtgcttgcagagtttgacactcctggccacactttgtcctggggaccaggtatccctggattactgactccttgctactctgggtctgagccctctggcacctttggaccagtgaatcccagtctcaataatacctatgagttcatgagcacattcttcttagaagtcagctctgtcttcccagatttttatcttcatcttggaggagatgaggttgatttcacctgctggaagtccaacccagagatccaggactttatgaggaagaaaggcttcggtgaggacttcaagcagctggagtccttctacatccagacgctgctggacatcgtctcttcttatggcaagggctatgtggtgtggcaggaggtgtttgataataaagtaaagattcagccagacacaatcatacaggtgtggcgagaggatattccagtgaactatatgaaggagctggaactggtcaccaaggccggcttccgggcccttctctctgccccctggtacctgaaccgtatatcctatggccctgactggaaggatttctacatagtggaacccctggcatttgaaggtacccctgagcagaaggctctggtgattggtggagaggcttgtatgtggggagaatatgtggacaacacaaacctggtccccaggctctggcccagagcaggggctgttgccgaaaggctgtggagcaacaagttgacatctgacctgacatttgcctatgaacgtttgtcacacttccgctgtgaattgctgaggcgaggtgtccaggcccaacccctcaatgtaggcttctgtgagcaggagtttgaacagacctgagccccaggcaccgaggagggtgctggctgtaggtgaatggtagtggagccaggcttccactgcatcctggccaggggacggagccccttgccttcgtgccccttgcctgcgtgcccctgtgcttggagagaaaggggccggtgctggcgctcgcattcaataaagagtaatgtggcatttttctataataaacatggattacctgtgtttaaaaaaaaaagtgtgaatggcgttagggtaagggcacagccaggctggagtcagtgtctgcccctgaggtcttttaagttgagggctgggaatgaaacctatagcctttgtgctgttctgccttgcctgtgagctatgtcactcccctcccactcctgaccatattccagacacctgccctaatcctcagcctgctcacttcacttctgcattatatctccaaggcgttggtatatggaaaaagatgtaggggcttggaggtgttctggacagtggggagggctccagacccaacctggtcacagaagagcctctcccccatgcatactcatccacctccctcccctagagctattctcctttgggtttcttgctgcttcaattttatacaaccattatttaaatattattaaacacatattgttctctaggaaaaaaaaaaaaaaaaaa.
+</pre><pre class="codeoutput">
+ans =
 
-Error in Lab1 (line 14)
-seqdisp(s.Sequence)
+  46&times;71 char array
+
+    '   1  TCACATCACA ACGACTTGTG GTTTTAATCC TCCGTTTTTC TGCTTCTGAA GTTACTTCAG'
+    '  61  CCTGGCAAGT CCTTTACCTC CCCGTAGGCC TGGCGAGCTG CATCACAACA TTCAAGATTC'
+    ' 121  ACCCTAGAGC CATCTGGGAA ACTTTCTTCT CCAGGTCGCC CTGCGTCCTC GCCTCCCCAC'
+    ' 181  CCCGTTCTTC TCGAGTCGGG TGAGCTGTCT AGTTCCATCA CGGCCGGCAC GGCCGCAGGG'
+    ' 241  GTGGCCGGTT ATTTACTGCT CTACTGGGCC CGTGAACAGT CTGGCGAGCC GAGCAGTTGC'
+    ' 301  CGACGCCCGG CACAATCCGC TGCACGTAGC AGGAGCCTCA GGTCCAGGCC GGAAGTGAAA'
+    ' 361  GGGCAGGGTG TGGGTCCTCC TGGGGTCGCA GGCGCAGAGC CGCCTCTGGT CACGTGATTC'
+    ' 421  GCCGATAAGT CACGGGGGCG CCGCTCACCT GACCAGGGTC TCACGTGGCC AGCCCCCTCC'
+    ' 481  GAGAGGGGAG ACCAGCGGGC CATGACAAGC TCCAGGCTTT GGTTTTCGCT GCTGCTGGCG'
+    ' 541  GCAGCGTTCG CAGGACGGGC GACGGCCCTC TGGCCCTGGC CTCAGAACTT CCAAACCTCC'
+    ' 601  GACCAGCGCT ACGTCCTTTA CCCGAACAAC TTTCAATTCC AGTACGATGT CAGCTCGGCC'
+    ' 661  GCGCAGCCCG GCTGCTCAGT CCTCGACGAG GCCTTCCAGC GCTATCGTGA CCTGCTTTTC'
+    ' 721  GGTTCCGGGT CTTGGCCCCG TCCTTACCTC ACAGGGAAAC GGCATACACT GGAGAAGAAT'
+    ' 781  GTGTTGGTTG TCTCTGTAGT CACACCTGGA TGTAACCAGC TTCCTACTTT GGAGTCAGTG'
+    ' 841  GAGAATTATA CCCTGACCAT AAATGATGAC CAGTGTTTAC TCCTCTCTGA GACTGTCTGG'
+    ' 901  GGAGCTCTCC GAGGTCTGGA GACTTTTAGC CAGCTTGTTT GGAAATCTGC TGAGGGCACA'
+    ' 961  TTCTTTATCA ACAAGACTGA GATTGAGGAC TTTCCCCGCT TTCCTCACCG GGGCTTGCTG'
+    '1021  TTGGATACAT CTCGCCATTA CCTGCCACTC TCTAGCATCC TGGACACTCT GGATGTCATG'
+    '1081  GCGTACAATA AATTGAACGT GTTCCACTGG CATCTGGTAG ATGATCCTTC CTTCCCATAT'
+    '1141  GAGAGCTTCA CTTTTCCAGA GCTCATGAGA AAGGGGTCCT ACAACCCTGT CACCCACATC'
+    '1201  TACACAGCAC AGGATGTGAA GGAGGTCATT GAATACGCAC GGCTCCGGGG TATCCGTGTG'
+    '1261  CTTGCAGAGT TTGACACTCC TGGCCACACT TTGTCCTGGG GACCAGGTAT CCCTGGATTA'
+    '1321  CTGACTCCTT GCTACTCTGG GTCTGAGCCC TCTGGCACCT TTGGACCAGT GAATCCCAGT'
+    '1381  CTCAATAATA CCTATGAGTT CATGAGCACA TTCTTCTTAG AAGTCAGCTC TGTCTTCCCA'
+    '1441  GATTTTTATC TTCATCTTGG AGGAGATGAG GTTGATTTCA CCTGCTGGAA GTCCAACCCA'
+    '1501  GAGATCCAGG ACTTTATGAG GAAGAAAGGC TTCGGTGAGG ACTTCAAGCA GCTGGAGTCC'
+    '1561  TTCTACATCC AGACGCTGCT GGACATCGTC TCTTCTTATG GCAAGGGCTA TGTGGTGTGG'
+    '1621  CAGGAGGTGT TTGATAATAA AGTAAAGATT CAGCCAGACA CAATCATACA GGTGTGGCGA'
+    '1681  GAGGATATTC CAGTGAACTA TATGAAGGAG CTGGAACTGG TCACCAAGGC CGGCTTCCGG'
+    '1741  GCCCTTCTCT CTGCCCCCTG GTACCTGAAC CGTATATCCT ATGGCCCTGA CTGGAAGGAT'
+    '1801  TTCTACATAG TGGAACCCCT GGCATTTGAA GGTACCCCTG AGCAGAAGGC TCTGGTGATT'
+    '1861  GGTGGAGAGG CTTGTATGTG GGGAGAATAT GTGGACAACA CAAACCTGGT CCCCAGGCTC'
+    '1921  TGGCCCAGAG CAGGGGCTGT TGCCGAAAGG CTGTGGAGCA ACAAGTTGAC ATCTGACCTG'
+    '1981  ACATTTGCCT ATGAACGTTT GTCACACTTC CGCTGTGAAT TGCTGAGGCG AGGTGTCCAG'
+    '2041  GCCCAACCCC TCAATGTAGG CTTCTGTGAG CAGGAGTTTG AACAGACCTG AGCCCCAGGC'
+    '2101  ACCGAGGAGG GTGCTGGCTG TAGGTGAATG GTAGTGGAGC CAGGCTTCCA CTGCATCCTG'
+    '2161  GCCAGGGGAC GGAGCCCCTT GCCTTCGTGC CCCTTGCCTG CGTGCCCCTG TGCTTGGAGA'
+    '2221  GAAAGGGGCC GGTGCTGGCG CTCGCATTCA ATAAAGAGTA ATGTGGCATT TTTCTATAAT'
+    '2281  AAACATGGAT TACCTGTGTT TAAAAAAAAA AGTGTGAATG GCGTTAGGGT AAGGGCACAG'
+    '2341  CCAGGCTGGA GTCAGTGTCT GCCCCTGAGG TCTTTTAAGT TGAGGGCTGG GAATGAAACC'
+    '2401  TATAGCCTTT GTGCTGTTCT GCCTTGCCTG TGAGCTATGT CACTCCCCTC CCACTCCTGA'
+    '2461  CCATATTCCA GACACCTGCC CTAATCCTCA GCCTGCTCAC TTCACTTCTG CATTATATCT'
+    '2521  CCAAGGCGTT GGTATATGGA AAAAGATGTA GGGGCTTGGA GGTGTTCTGG ACAGTGGGGA'
+    '2581  GGGCTCCAGA CCCAACCTGG TCACAGAAGA GCCTCTCCCC CATGCATACT CATCCACCTC'
+    '2641  CCTCCCCTAG AGCTATTCTC CTTTGGGTTT CTTGCTGCTT CAATTTTATA CAACCATTAT'
+    '2701  TTAAATATTA TTAAACACAT ATTGTTCTCT AGGAAAAAAA AAAAAAAAAA A         '
+
 </pre><p>Count nucleotides in sequence</p><pre class="codeinput">[seq_counts] = basecount(s.Sequence)
+</pre><pre class="codeoutput">
+seq_counts = 
+
+  struct with fields:
+
+    A: 593
+    C: 750
+    G: 716
+    T: 692
+
 </pre><p>Plot density of nucleotides along sequence</p><pre class="codeinput">figure(1)
-seq_density = ntdensity(s.Sequence)
-</pre><p>Count dimers in the nucleotide sequence</p><pre class="codeinput">figure(2)
+seq_density_n20 = ntdensity(s.Sequence)
+</pre><pre class="codeoutput">
+seq_density_n20 = 
+
+  struct with fields:
+
+    A: [1&times;2751 double]
+    C: [1&times;2751 double]
+    G: [1&times;2751 double]
+    T: [1&times;2751 double]
+
+</pre><img vspace="5" hspace="5" src="Lab1_01.png" style="width:560px;height:420px;" alt=""> <p>Count dimers in the nucleotide sequence</p><pre class="codeinput">figure(2)
 [Dimers, Percent] = dimercount(s.Sequence, <span class="string">'chart'</span>, <span class="string">'pie'</span>)
-</pre><p>Count 3-mer in nucleotide sequence</p><pre class="codeinput">trimer = nmercount(s.Sequence, 3)
+</pre><pre class="codeoutput">
+Dimers = 
+
+  struct with fields:
+
+    AA: 137
+    AC: 145
+    AG: 185
+    AT: 125
+    CA: 184
+    CC: 235
+    CG: 90
+    CT: 241
+    GA: 171
+    GC: 178
+    GG: 220
+    GT: 147
+    TA: 101
+    TC: 192
+    TG: 221
+    TT: 178
+
+
+Percent =
+
+    0.0498    0.0527    0.0673    0.0455
+    0.0669    0.0855    0.0327    0.0876
+    0.0622    0.0647    0.0800    0.0535
+    0.0367    0.0698    0.0804    0.0647
+
+</pre><img vspace="5" hspace="5" src="Lab1_02.png" style="width:560px;height:420px;" alt=""> <p>Count 3-mer in nucleotide sequence</p><pre class="codeinput">trimer = nmercount(s.Sequence, 3)
+</pre><pre class="codeoutput">
+trimer =
+
+  64&times;2 cell array
+
+    'ctg'    [95]
+    'cct'    [81]
+    'tgg'    [77]
+    'gag'    [68]
+    'ggc'    [68]
+    'ccc'    [66]
+    'tcc'    [66]
+    'agg'    [65]
+    'cag'    [65]
+    'tct'    [63]
+    'gct'    [62]
+    'ctc'    [61]
+    'ctt'    [61]
+    'gcc'    [59]
+    'ttc'    [58]
+    'gga'    [55]
+    'tga'    [55]
+    'cca'    [54]
+    'ggg'    [53]
+    'gtg'    [51]
+    'ttt'    [51]
+    'cac'    [50]
+    'tgt'    [48]
+    'aaa'    [46]
+    'aca'    [46]
+    'tca'    [46]
+    'agc'    [45]
+    'acc'    [44]
+    'ggt'    [44]
+    'gtc'    [43]
+    'aga'    [42]
+    'gaa'    [42]
+    'ttg'    [42]
+    'tgc'    [41]
+    'cat'    [39]
+    'gca'    [38]
+    'gac'    [37]
+    'act'    [35]
+    'tat'    [35]
+    'aag'    [34]
+    'att'    [34]
+    'ccg'    [34]
+    'agt'    [33]
+    'atg'    [33]
+    'gtt'    [32]
+    'caa'    [30]
+    'aac'    [29]
+    'ata'    [29]
+    'atc'    [29]
+    'tac'    [29]
+    'aat'    [27]
+    'tta'    [27]
+    'cgg'    [25]
+    'cgc'    [24]
+    'cta'    [24]
+    'gat'    [24]
+    'cgt'    [22]
+    'gta'    [21]
+    'acg'    [20]
+    'cga'    [19]
+    'gcg'    [19]
+    'taa'    [19]
+    'tag'    [18]
+    'tcg'    [17]
+
 </pre><p>Try different window sizes for ntdensity function Default is length(seq)/20 Lets try doing length(seq)/10, using the round() function since the window length must be an integer</p><pre class="codeinput">figure(3)
-seq_density_t = ntdensity(s.Sequence, <span class="string">'WINDOW'</span>,round(length(s.Sequence)/10))
-</pre><p>And we can try length(seq)/30</p><pre class="codeinput">figure(4)
-seq_density_t = ntdensity(s.Sequence, <span class="string">'WINDOW'</span>,round(length(s.Sequence)/30))
-</pre><p>The window sizes for each of these three values are as follows: length(seq)/10 = ~275  length(seq)/20 = ~137  length(seq)/30 ~ 91 The advance of having the larger window size is that the image is more more clear to see (A bit zoomed in). However larger window sizes require you to pan to look at specfic points of interest. Smaller window sizes allow for one to see large amounts of data within one space</p><h2 id="12">Part 3: Condon Count and ORF</h2><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017a</a><br></p></div><!--
+seq_density_n10 = ntdensity(s.Sequence, <span class="string">'WINDOW'</span>,round(length(s.Sequence)/10))
+</pre><pre class="codeoutput">
+seq_density_n10 = 
+
+  struct with fields:
+
+    A: [1&times;2751 double]
+    C: [1&times;2751 double]
+    G: [1&times;2751 double]
+    T: [1&times;2751 double]
+
+</pre><img vspace="5" hspace="5" src="Lab1_03.png" style="width:560px;height:420px;" alt=""> <p>And we can try length(seq)/30</p><pre class="codeinput">figure(4)
+seq_density_n30 = ntdensity(s.Sequence, <span class="string">'WINDOW'</span>,round(length(s.Sequence)/30))
+</pre><pre class="codeoutput">
+seq_density_n30 = 
+
+  struct with fields:
+
+    A: [1&times;2751 double]
+    C: [1&times;2751 double]
+    G: [1&times;2751 double]
+    T: [1&times;2751 double]
+
+</pre><img vspace="5" hspace="5" src="Lab1_04.png" style="width:560px;height:420px;" alt=""> <p>The window sizes for each of these three values are as follows: length(seq)/10 = ~275  length(seq)/20 = ~137  length(seq)/30 ~ 91 The advance of having the larger window size is that the image is more more clear to see (A bit zoomed in). However larger window sizes require you to pan to look at specfic points of interest. Smaller window sizes allow for one to see large amounts of data within one space</p><h2 id="12">Part 1.3.1: Condon Count and ORF</h2><p>Return codon counts for each of the six reading frames Plot the results in a heat map</p><pre class="codeinput">figure(5)
+rlcodons_1 = codoncount(s.Sequence, <span class="string">'frame'</span>, 1, <span class="string">'figure'</span>, true);
+title(<span class="string">'Frame 1'</span>)
+figure(6)
+rlcodons_2 = codoncount(s.Sequence, <span class="string">'frame'</span>, 2, <span class="string">'figure'</span>, true);
+title(<span class="string">'Frame 2'</span>)
+figure(7)
+rlcodons_3 = codoncount(s.Sequence, <span class="string">'frame'</span>, 3, <span class="string">'figure'</span>, true);
+title(<span class="string">'Frame 3'</span>)
+</pre><img vspace="5" hspace="5" src="Lab1_05.png" style="width:560px;height:420px;" alt=""> <img vspace="5" hspace="5" src="Lab1_06.png" style="width:560px;height:420px;" alt=""> <img vspace="5" hspace="5" src="Lab1_07.png" style="width:560px;height:420px;" alt=""> <p>To get the other 3 frames we take the reverse complement</p><pre class="codeinput">figure(8)
+rlcodons_4 = codoncount(s.Sequence, <span class="string">'Reverse'</span>,true,<span class="string">'frame'</span>, 1, <span class="string">'figure'</span>, true);
+title(<span class="string">'Frame 4'</span>)
+figure(9)
+rlcodons_5 = codoncount(s.Sequence, <span class="string">'Reverse'</span>,true,<span class="string">'frame'</span>, 2, <span class="string">'figure'</span>, true);
+title(<span class="string">'Frame 5'</span>)
+figure(10)
+rlcodons_6 = codoncount(s.Sequence, <span class="string">'Reverse'</span>,true,<span class="string">'frame'</span>, 3, <span class="string">'figure'</span>, true);
+title(<span class="string">'Frame 6'</span>)
+</pre><img vspace="5" hspace="5" src="Lab1_08.png" style="width:560px;height:420px;" alt=""> <img vspace="5" hspace="5" src="Lab1_09.png" style="width:560px;height:420px;" alt=""> <img vspace="5" hspace="5" src="Lab1_10.png" style="width:560px;height:420px;" alt=""> <h2 id="14">Part 1.3.1: Find ORFs based on length</h2><p>Find ORFS of length &gt; 50 in Frame 1 of the given sequence</p><pre class="codeinput">orf_min_50 = seqshoworfs(s.Sequence, <span class="string">'Frames'</span>, 1, <span class="string">'MinimumLength'</span>, 50);
+</pre><img vspace="5" hspace="5" src="Lab1_11.png" style="width:755px;height:513px;" alt=""> <p>Find ORFS of length &gt; 500 in Frame 1 of the given sequence</p><pre class="codeinput">orf_min_500 = seqshoworfs(s.Sequence, <span class="string">'Frames'</span>, 1, <span class="string">'MinimumLength'</span>, 500);
+</pre><img vspace="5" hspace="5" src="Lab1_12.png" style="width:755px;height:513px;" alt=""> <h2 id="17">Part 1.3.2 Finding optimum threshold for ORFs</h2><p>we can find the optimum length of ORF</p><p>Get total number of stop codons within each frame</p><pre class="codeinput">total1 = rlcodons_1.TGA + rlcodons_1.TAG + rlcodons_1.TAA;
+total2 = rlcodons_2.TGA + rlcodons_2.TAG + rlcodons_2.TAA;
+total3 = rlcodons_3.TGA + rlcodons_3.TAG + rlcodons_3.TAA;
+total4 = rlcodons_4.TGA + rlcodons_4.TAG + rlcodons_4.TAA;
+total5 = rlcodons_5.TGA + rlcodons_5.TAG + rlcodons_5.TAA;
+total6 = rlcodons_6.TGA + rlcodons_6.TAG + rlcodons_6.TAA;
+totalStop = total1 + total2 + total3 + total4 + total5 + total6
+</pre><pre class="codeoutput">
+totalStop =
+
+   189
+
+</pre><p>Get total number of codons in the sequence</p><pre class="codeinput">c1 = struct2cell(rlcodons_1);
+c2 = struct2cell(rlcodons_2);
+c3 = struct2cell(rlcodons_3);
+c4 = struct2cell(rlcodons_4);
+c5 = struct2cell(rlcodons_5);
+c6 = struct2cell(rlcodons_6);
+TotalCodons1 = CalculateTotal(c1, length(c1));
+TotalCodons2 = CalculateTotal(c2, length(c2));
+TotalCodons3 = CalculateTotal(c3, length(c3));
+TotalCodons4 = CalculateTotal(c4, length(c4));
+TotalCodons5 = CalculateTotal(c5, length(c5));
+TotalCodons6 = CalculateTotal(c6, length(c6));
+TotalCodons = TotalCodons1 + TotalCodons2 + TotalCodons3 + TotalCodons4 + TotalCodons5 + TotalCodons6
+</pre><p>Find optimal length</p><pre class="codeinput">k = log(0.05) / log(1 - (totalStop/TotalCodons))
+</pre><pre class="codeoutput">
+k =
+
+   85.6391
+
+</pre><p>Find ORFs with the given estimated numberorf_min_50 = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', 50);</p><pre class="codeinput">orf_estimated = seqshoworfs(s.Sequence, <span class="string">'Frames'</span>, 1, <span class="string">'MinimumLength'</span>, k);
+</pre><img vspace="5" hspace="5" src="Lab1_13.png" style="width:755px;height:513px;" alt=""> <h2 id="22">General Functions</h2><p>Quick function to calculate total within frame cell array</p><pre class="codeinput"><span class="keyword">function</span> total = CalculateTotal(array, length)
+total = 0;
+<span class="keyword">for</span> n=1:length
+    total = total +  array{n};
+<span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">
+TotalCodons =
+
+        5498
+
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Part 1.1.1 Download sequence with accession number and load into MATLAB
 % Retrieve sequence, save to file
 clc;close all; clear;
-getgenbank('nm_000520', 'toFile', 'nm_000520.txt');
 %%
-% Bring file into matlab
-s = genbankread('nm_000520.txt');
+% Check if file already exists, if it doesn't. Download file from genbank
+if exist('nm_000520.txt') == 2
+    % Bring file into matlab
+    s = genbankread('nm_000520.txt');
+else
+    % Grab file and then bring it into matlab
+    getgenbank('nm_000520', 'toFile', 'nm_000520.txt');
+    s = genbankread('nm_000520.txt');
+end
 %%
 % Extract sequence
 seq = getgenbank('nm_000520', 'SequenceOnly', true);
@@ -110,7 +370,7 @@ seqdisp(s.Sequence)
 %%
 % Plot density of nucleotides along sequence
 figure(1)
-seq_density = ntdensity(s.Sequence)
+seq_density_n20 = ntdensity(s.Sequence)
 %%
 % Count dimers in the nucleotide sequence
 figure(2)
@@ -124,11 +384,11 @@ trimer = nmercount(s.Sequence, 3)
 % Lets try doing length(seq)/10, using the round() function since the window length must
 % be an integer
 figure(3)
-seq_density_t = ntdensity(s.Sequence, 'WINDOW',round(length(s.Sequence)/10))
+seq_density_n10 = ntdensity(s.Sequence, 'WINDOW',round(length(s.Sequence)/10))
 %%
 % And we can try length(seq)/30
 figure(4)
-seq_density_t = ntdensity(s.Sequence, 'WINDOW',round(length(s.Sequence)/30))
+seq_density_n30 = ntdensity(s.Sequence, 'WINDOW',round(length(s.Sequence)/30))
 %%
 % The window sizes for each of these three values are as follows:
 % length(seq)/10 = ~275 || length(seq)/20 = ~137 || length(seq)/30 ~ 91
@@ -137,7 +397,82 @@ seq_density_t = ntdensity(s.Sequence, 'WINDOW',round(length(s.Sequence)/30))
 % you to pan to look at specfic points of interest. Smaller window sizes
 % allow for one to see large amounts of data within one space
 
-%% Part 3: Condon Count and ORF
+%% Part 1.3.1: Condon Count and ORF
+% Return codon counts for each of the six reading frames
+% Plot the results in a heat map
+figure(5)
+rlcodons_1 = codoncount(s.Sequence, 'frame', 1, 'figure', true);
+title('Frame 1')
+figure(6)
+rlcodons_2 = codoncount(s.Sequence, 'frame', 2, 'figure', true);
+title('Frame 2')
+figure(7)
+rlcodons_3 = codoncount(s.Sequence, 'frame', 3, 'figure', true);
+title('Frame 3')
+%%
+% To get the other 3 frames we take the reverse complement
+figure(8)
+rlcodons_4 = codoncount(s.Sequence, 'Reverse',true,'frame', 1, 'figure', true);
+title('Frame 4')
+figure(9)
+rlcodons_5 = codoncount(s.Sequence, 'Reverse',true,'frame', 2, 'figure', true);
+title('Frame 5')
+figure(10)
+rlcodons_6 = codoncount(s.Sequence, 'Reverse',true,'frame', 3, 'figure', true);
+title('Frame 6')
+%% Part 1.3.1: Find ORFs based on length
+
+%%
+% Find ORFS of length > 50 in Frame 1 of the given sequence
+orf_min_50 = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', 50);
+%%
+% Find ORFS of length > 500 in Frame 1 of the given sequence
+orf_min_500 = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', 500);
+
+%% Part 1.3.2 Finding optimum threshold for ORFs
+% we can find the optimum length of ORF
+%%
+% Get total number of stop codons within each frame
+total1 = rlcodons_1.TGA + rlcodons_1.TAG + rlcodons_1.TAA;
+total2 = rlcodons_2.TGA + rlcodons_2.TAG + rlcodons_2.TAA;  
+total3 = rlcodons_3.TGA + rlcodons_3.TAG + rlcodons_3.TAA;
+total4 = rlcodons_4.TGA + rlcodons_4.TAG + rlcodons_4.TAA;
+total5 = rlcodons_5.TGA + rlcodons_5.TAG + rlcodons_5.TAA;
+total6 = rlcodons_6.TGA + rlcodons_6.TAG + rlcodons_6.TAA;
+totalStop = total1 + total2 + total3 + total4 + total5 + total6
+%%
+% Get total number of codons in the sequence
+c1 = struct2cell(rlcodons_1);
+c2 = struct2cell(rlcodons_2);
+c3 = struct2cell(rlcodons_3);
+c4 = struct2cell(rlcodons_4);
+c5 = struct2cell(rlcodons_5);
+c6 = struct2cell(rlcodons_6);
+TotalCodons1 = CalculateTotal(c1, length(c1));
+TotalCodons2 = CalculateTotal(c2, length(c2));
+TotalCodons3 = CalculateTotal(c3, length(c3));
+TotalCodons4 = CalculateTotal(c4, length(c4));
+TotalCodons5 = CalculateTotal(c5, length(c5));
+TotalCodons6 = CalculateTotal(c6, length(c6));
+TotalCodons = TotalCodons1 + TotalCodons2 + TotalCodons3 + TotalCodons4 + TotalCodons5 + TotalCodons6
+
+%%
+% Find optimal length
+k = log(0.05) / log(1 - (totalStop/TotalCodons))
+%%
+% Find ORFs with the given estimated numberorf_min_50 = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', 50);
+orf_estimated = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', k);
+
+
+%% General Functions
+% Quick function to calculate total within frame cell array
+function total = CalculateTotal(array, length)
+total = 0;
+for n=1:length
+    total = total +  array{n};    
+end
+end
+
 
 
 ##### SOURCE END #####

@@ -1,3 +1,7 @@
+%% ECES T580 Lab 1
+% Bhautik (Brian) Amin
+
+
 %% Part 1.1.1 Download sequence with accession number and load into MATLAB
 % Retrieve sequence, save to file
 clc;close all; clear;

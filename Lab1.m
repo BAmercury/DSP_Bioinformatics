@@ -117,6 +117,8 @@ TotalCodons = TotalCodons1 + TotalCodons2 + TotalCodons3 + TotalCodons4 + TotalC
 %%
 % Find optimal length
 k = log(0.05) / log(1 - (totalStop/TotalCodons))
+% must be a multiple of three
+k = k + 1 + 1
 %%
 % Find ORFs with the given estimated numberorf_min_50 = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', 50);
 orf_estimated = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', k);

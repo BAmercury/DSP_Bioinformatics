@@ -325,10 +325,17 @@ TotalCodons5 = CalculateTotal(c5, length(c5));
 TotalCodons6 = CalculateTotal(c6, length(c6));
 TotalCodons = TotalCodons1 + TotalCodons2 + TotalCodons3 + TotalCodons4 + TotalCodons5 + TotalCodons6
 </pre><p>Find optimal length</p><pre class="codeinput">k = log(0.05) / log(1 - (totalStop/TotalCodons))
+<span class="comment">% must be a multiple of three</span>
+k = k + 1 + 1
 </pre><pre class="codeoutput">
 k =
 
    85.6391
+
+
+k =
+
+   87.6391
 
 </pre><p>Find ORFs with the given estimated numberorf_min_50 = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', 50);</p><pre class="codeinput">orf_estimated = seqshoworfs(s.Sequence, <span class="string">'Frames'</span>, 1, <span class="string">'MinimumLength'</span>, k);
 </pre><img vspace="5" hspace="5" src="Lab1_13.png" style="width:755px;height:513px;" alt=""> <h2 id="22">General Functions</h2><p>Quick function to calculate total within frame cell array</p><pre class="codeinput"><span class="keyword">function</span> total = CalculateTotal(array, length)
@@ -463,6 +470,8 @@ TotalCodons = TotalCodons1 + TotalCodons2 + TotalCodons3 + TotalCodons4 + TotalC
 %%
 % Find optimal length
 k = log(0.05) / log(1 - (totalStop/TotalCodons))
+% must be a multiple of three
+k = k + 1 + 1
 %%
 % Find ORFs with the given estimated numberorf_min_50 = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', 50);
 orf_estimated = seqshoworfs(s.Sequence, 'Frames', 1, 'MinimumLength', k);

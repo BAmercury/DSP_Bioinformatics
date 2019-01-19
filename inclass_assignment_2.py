@@ -3,7 +3,7 @@
 # Program built on Python 2.7.12
 import numpy as np # Import numpy to calculate averages
 
-""" Problem A:
+""" Part A:
     Compute a set of 5 averages by moving window along a test case array of 9 values
 """
 k = 5 # Pointer variable for window length
@@ -19,30 +19,38 @@ for iteration in range(5): # Iterate through calculatios a total of 5 times (5 a
 print("Averages for Part A: ")
 print(averages) # Print final array at the end
 
+""" Part A Output:
+    >>Averages for Part A:
+    >>[3.0, 3.6000000000000001, 5.2000000000000002, 4.5999999999999996, 4.0]
+"""
+
 """ Problem B:
-    Create algorithim that does this faster
+    Create algorithm that does this faster
 """
 k = 5 # Pointer variable for window length
 p = 0 # Pointer variable for starting index
 x = [1, 2, 5, 4, 3, 4, 10, 2, 1] # Test case data
 n = 9 # Length of test case data
 averages = [] # empty array to store averages
-previous_value = 0
-next_value = 0
+previous_value = 0 # Previous value that lies outside of overlap
 
 
-previous_sum = np.sum(x[p:k])
-averages.append(previous_sum/5.000)
+previous_sum = np.sum(x[p:k]) # Precalculate the first sum of the array
+averages.append(previous_sum/5.000) # Calculate the average for this sum and save it to list
 
 for iteration in range(4):
-    sum_update = previous_sum - x[p]
-    sum_update = sum_update + x[p+5]
-    averages.append(sum_update/5.000)
+    sum_update = previous_sum - x[p] # Subtract the latest sum from the previous index
+    sum_update = sum_update + x[p+5] # Add this updated sum to the next index
+    averages.append(sum_update/5.000) # Compute the average and save to array
     previous_sum = sum_update
-    p = p + 1
+    p = p + 1 # Update the previous index pointer
 print("Averages for Part B: ")
 print(averages) # Print final array at the end
 
+""" Part B Output:
+    >>Averages for Part B:
+    >>[3.0, 3.6000000000000001, 5.2000000000000002, 4.5999999999999996, 4.0]
+"""
 
 """ Part C:
     Create an algorithm that can compute the maximum number
@@ -74,3 +82,10 @@ window_length = raw_input()
 window_length = int(window_length)
 # Run the function
 findMax(user_input, window_length)
+
+""" Part C Output:
+    >> Sample Input I typed in: [1, 2, 5, 5, 6, 10]
+    >> Sample Input I typed in for window length: 4
+    Output:
+    >> [5, 6, 10]
+"""

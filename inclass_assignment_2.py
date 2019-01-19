@@ -52,6 +52,49 @@ print(averages) # Print final array at the end
     >>[3.0, 3.6000000000000001, 5.2000000000000002, 4.5999999999999996, 4.0]
 """
 
+""" Part B Iteration Two:
+    Create a function that takes user defined test case array and a user defined window size
+    and run the Part B algorithm on it
+"""
+
+def CalculateMovingAverage(array, window_size):
+    p = 0 # Pointer variable for starting index
+    k = window_size # Pointer variable for window length
+    array_size = len(array) # Length of test case data
+    previous_sum = np.sum(array[p:k]) # Precalculate the first sum of the array
+    averages = [] # empty array to store averages
+    averages.append(previous_sum/float(window_size)) # Calculate the average for this sum and save it to list, have calculation as floating point
+    for i in range(array_size - window_size):
+        sum_update = previous_sum - x[p] # Subtract the latest sum from the previous index
+        sum_update = sum_update + x[p+window_size] # Add this updated sum to the next index
+        averages.append(sum_update/float(window_size)) # Compute the average and save to array via floating point math
+        previous_sum = sum_update
+        p = p + 1 # Update the previous index pointer
+    print("Part B User Defined Test Case:")
+    print(averages)
+
+# Prompt user for a test case array and window size to test this function
+print("Give me a list of integers, seperate them using a comma")
+cd_string = raw_input()
+# Convert comma delimited string to list of characters
+user_input = cd_string.split(',')
+# Convert these values into list of integers
+user_input = map(int, user_input)
+# Prompt user for window length
+print("Give me the window length")
+window_length = raw_input()
+window_length = int(window_length)
+# Run user defined test case
+CalculateMovingAverage(user_input, window_length)
+
+""" Part B Iteration Two Sample Output:
+    >> Sample Input I typed in: 1, 4, 5, 6, 7, 8, 9
+    >> Sample Input I typed in for window length: 4
+    Output:
+    >> [4.0, 4.5, 5.0, 6.25]
+"""
+
+
 """ Part C:
     Create an algorithm that can compute the maximum number
     within an array with N-length windows, with an overlap of N-1
@@ -84,7 +127,7 @@ window_length = int(window_length)
 findMax(user_input, window_length)
 
 """ Part C Output:
-    >> Sample Input I typed in: [1, 2, 5, 5, 6, 10]
+    >> Sample Input I typed in: 1, 2, 5, 5, 6, 10
     >> Sample Input I typed in for window length: 4
     Output:
     >> [5, 6, 10]

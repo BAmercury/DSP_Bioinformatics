@@ -1,7 +1,7 @@
-# ECES T580 In Class Assingment 2
+# ECES T580 In Class Assignment 2
 # Bhautik (Brian) Amin
 # Program built on Python 2.7.12
-import numpy as np # Import numpy to calculate averages
+import numpy as np # Import numpy to calculate averages and sums
 
 """ Part A:
     Compute a set of 5 averages by moving window along a test case array of 9 values

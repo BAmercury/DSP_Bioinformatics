@@ -1,0 +1,533 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Lab 2</title><meta name="generator" content="MATLAB 9.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-01-25"><meta name="DC.source" content="LAB2NEW.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Lab 2</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#7">Lab 2.1.2</a></li></ul></div><pre class="codeinput"><span class="comment">%Lab 2.1.1</span>
+</pre><p>1. How many hits did 'hbb' get? url was: https://www.ncbi.nlm.nih.gov/gene/?term=hbb Found 31 databases for hbb Results Gene-1561  and Nucleotide-9006</p><p>3. hbb AND human[orgn] found 27 databases Gene 89 Nucleotide 280</p><p>4. Explore the HBB hemoglobin  subunit beta record <a href="http://www.ncbi.nlm.nih.gov/gene/3043">http://www.ncbi.nlm.nih.gov/gene/3043</a></p><p>5. hbb, human, and RefSeqGene query https://www.ncbi.nlm.nih.gov/nuccore/28380636</p><p>6. We aim to obtain whole region and do analysis of 81,706 bp of linear DNA</p><h2 id="7">Lab 2.1.2</h2><p>1. Generate one second of a cosine</p><pre class="codeinput">ws = 10; <span class="comment">% Hz</span>
+Fs = 100; <span class="comment">% Hz</span>
+<span class="comment">% Assign signal to x and have tt as time axis</span>
+t = 0:1/Fs:1;
+x = cos(2*pi*ws*t); <span class="comment">% Create a cosine wave with frequency 10Hz, sampled at 100 Hz</span>
+tt = linspace(0,1000) <span class="comment">% From 0 to 1000 seconds</span>
+figure(1);
+plot(t,x) <span class="comment">% Plot the cosine wave</span>
+title({<span class="string">'Cosine'</span>})
+xlabel(<span class="string">'time(seconds)'</span>)
+ylabel(<span class="string">'Amplitude'</span>)
+</pre><pre class="codeoutput">
+tt =
+
+   1.0e+03 *
+
+  Columns 1 through 7
+
+         0    0.0101    0.0202    0.0303    0.0404    0.0505    0.0606
+
+  Columns 8 through 14
+
+    0.0707    0.0808    0.0909    0.1010    0.1111    0.1212    0.1313
+
+  Columns 15 through 21
+
+    0.1414    0.1515    0.1616    0.1717    0.1818    0.1919    0.2020
+
+  Columns 22 through 28
+
+    0.2121    0.2222    0.2323    0.2424    0.2525    0.2626    0.2727
+
+  Columns 29 through 35
+
+    0.2828    0.2929    0.3030    0.3131    0.3232    0.3333    0.3434
+
+  Columns 36 through 42
+
+    0.3535    0.3636    0.3737    0.3838    0.3939    0.4040    0.4141
+
+  Columns 43 through 49
+
+    0.4242    0.4343    0.4444    0.4545    0.4646    0.4747    0.4848
+
+  Columns 50 through 56
+
+    0.4949    0.5051    0.5152    0.5253    0.5354    0.5455    0.5556
+
+  Columns 57 through 63
+
+    0.5657    0.5758    0.5859    0.5960    0.6061    0.6162    0.6263
+
+  Columns 64 through 70
+
+    0.6364    0.6465    0.6566    0.6667    0.6768    0.6869    0.6970
+
+  Columns 71 through 77
+
+    0.7071    0.7172    0.7273    0.7374    0.7475    0.7576    0.7677
+
+  Columns 78 through 84
+
+    0.7778    0.7879    0.7980    0.8081    0.8182    0.8283    0.8384
+
+  Columns 85 through 91
+
+    0.8485    0.8586    0.8687    0.8788    0.8889    0.8990    0.9091
+
+  Columns 92 through 98
+
+    0.9192    0.9293    0.9394    0.9495    0.9596    0.9697    0.9798
+
+  Columns 99 through 100
+
+    0.9899    1.0000
+
+</pre><img vspace="5" hspace="5" src="LAB2NEW_01.png" alt=""> <p>2. Take FFT, 64 points (1-65)</p><pre class="codeinput">fft_out = fft(x(1:64)); <span class="comment">% Take fft of signal and then shift zero-frequency to center of spectrum</span>
+</pre><p>3. Plot magnitude of 64-point FFT at range of 0 to 63</p><pre class="codeinput">figure(2);
+title(<span class="string">'64-FFT'</span>)
+xlabel(<span class="string">'Frequency'</span>)
+ylabel(<span class="string">'Amplitude'</span>)
+plot((0:63), abs(fft_out)/length(fft_out))
+</pre><img vspace="5" hspace="5" src="LAB2NEW_02.png" alt=""> <p>From the magnitude plot, we can see that the x axis does not reflect the signal properly. The two large peaks should represent the 10 Hz frequency of the signal, and ideally fft should be centered at 0.</p><pre class="codeinput">dF = Fs/64;
+freq = -Fs/2:dF:Fs/2-dF;
+figure(3);
+plot(freq, abs(fft_out)/64) <span class="comment">% Plot fft of the signal before shifting the graph</span>
+</pre><img vspace="5" hspace="5" src="LAB2NEW_03.png" alt=""> <p>From the plot, we can see that the frequency</p><pre class="codeinput">fft_out = fftshift(fft(x(1:64)));
+figure(4);
+<span class="comment">%The shifted plot which is centered at 0</span>
+title(<span class="string">'Frequency components centered about 0'</span>)
+xlabel(<span class="string">'Frequency'</span>)
+ylabel(<span class="string">'Amplitude'</span>)
+plot(freq, abs(fft_out)/64)
+</pre><img vspace="5" hspace="5" src="LAB2NEW_04.png" alt=""> <pre class="codeinput"><span class="comment">%N=1024 ; 1024 DFT</span>
+ws = 10; <span class="comment">% Hz</span>
+Fs = 1500; <span class="comment">% Hz</span>
+<span class="comment">% Assign signal to x and have tt as time axis</span>
+t = 0:1/Fs:1;
+x = cos(2*pi*ws*t);
+
+
+fft_out = fft(x(1:1024)); <span class="comment">% Take fft of signal and then shift zero-frequency to center of spectrum</span>
+</pre><p>3. Plot magnitude of 1024-point FFT at range of 0 to 1023</p><pre class="codeinput">figure(5);
+title(<span class="string">'64-FFT'</span>)
+xlabel(<span class="string">'Frequency'</span>)
+ylabel(<span class="string">'Amplitude'</span>)
+plot((0:1023), abs(fft_out)/length(fft_out))
+</pre><img vspace="5" hspace="5" src="LAB2NEW_05.png" alt=""> <p>From the magnitude plot, we can see that the x axis does not reflect the signal properly. The two large peaks should represent the 10 Hz frequency of the signal, and ideally fft should be centered at 0.</p><pre class="codeinput">dF = Fs/1024;
+freq = -Fs/2:dF:Fs/2-dF;
+figure(6);
+plot(freq, abs(fft_out)/1024) <span class="comment">% Plot fft of the signal before shifting the graph</span>
+</pre><img vspace="5" hspace="5" src="LAB2NEW_06.png" alt=""> <p>From the plot, we can see that the frequency</p><pre class="codeinput">fft_out = fftshift(fft(x(1:1024)));
+figure(7);
+<span class="comment">%The shifted plot which is centered at 0</span>
+title(<span class="string">'Frequency components centered about 0'</span>)
+xlabel(<span class="string">'Frequency'</span>)
+ylabel(<span class="string">'Amplitude'</span>)
+plot(freq, abs(fft_out)/1024)
+</pre><img vspace="5" hspace="5" src="LAB2NEW_07.png" alt=""> <p>Lab2.2.1</p><pre class="codeinput"><span class="comment">%1</span>
+hbb = genbankread(<span class="string">'hbb_region_chr11.gb'</span>);
+CDS = hbb.CDS;
+<span class="comment">%Number of CDS regions in this sequence</span>
+length(hbb.CDS)
+<span class="comment">%2</span>
+length(hbb.CDS(1))
+
+CDSrange = hbb.CDS.indices;
+A=hbb.Sequence(1);
+<span class="comment">%Coding and non coding sequence</span>
+[coding, noncoding] = separateCDS(hbb.Sequence, CDS(1).indices);
+<span class="comment">%3</span>
+<span class="comment">%Input taken from the user for indice</span>
+<span class="comment">%user enters 2</span>
+n=2;
+<span class="comment">%Using the function separateCDS.m that was created</span>
+<span class="comment">%{
+</span><span class="comment">function [coding, noncoding] = separateCDS(sequence, CDS_indices)
+</span><span class="comment">
+</span><span class="comment">%   [coding, noncoding] = separateCDSregion(hbb.Sequence, CDS(1).indices)
+</span><span class="comment">%   [coding, noncoding] = separateCDSregion(Sequence, CDS_indices)
+</span><span class="comment">
+</span><span class="comment">coding = []; % Create empty arrays to store the coding and noncoding sequences
+</span><span class="comment">noncoding = [];
+</span><span class="comment">
+</span><span class="comment">% Find coding regions and store them
+</span><span class="comment">for i=1:2:length(CDS_indices)-1
+</span><span class="comment">    coding = [coding, sequence(CDS_indices(i):CDS_indices(i+1))];
+</span><span class="comment">end
+</span><span class="comment">
+</span><span class="comment">
+</span><span class="comment">
+</span><span class="comment">% Find noncoding regions and store them
+</span><span class="comment">for i=2:2:length(CDS_indices)-1
+</span><span class="comment">   noncoding = [noncoding, sequence(CDS_indices(i):CDS_indices(i+1))];
+</span><span class="comment">end
+</span><span class="comment">
+</span><span class="comment">
+</span><span class="comment">%}
+</span>
+
+[coding, noncoding] = separateCDS(hbb.Sequence, CDS(n).indices);
+
+<span class="comment">%Lab 2.2.3</span>
+coding_A = (upper(coding)==<span class="string">'A'</span>); <span class="comment">% find A bases and set them to 1</span>
+coding_T = (upper(coding)==<span class="string">'T'</span>); <span class="comment">% find T bases and set them to 1</span>
+coding_G = (upper(coding)==<span class="string">'G'</span>); <span class="comment">% find G bases and set them to 1</span>
+coding_C = (upper(coding)==<span class="string">'C'</span>); <span class="comment">% find C bases and set them to 1</span>
+ <span class="comment">% FFT of the sequence</span>
+coding_FT = abs(fft(coding_A,1024)).^2+abs(fft(coding_T,1024)).^2+abs(fft(coding_G,1024)).^2+abs(fft(coding_C,1024)).^2;
+coding_FT(1:10)=0;
+coding_FT(end-10:end)=0;
+figure(8)
+plot(coding_FT(100:1000));
+title(<span class="string">'Coding Sequence'</span>);
+<span class="comment">%xlim([100 1000]);</span>
+noncoding_A = (upper(coding)==<span class="string">'A'</span>); <span class="comment">% find A bases and set them to 1</span>
+noncoding_T = (upper(coding)==<span class="string">'T'</span>); <span class="comment">% find T bases and set them to 1</span>
+noncoding_G = (upper(coding)==<span class="string">'G'</span>); <span class="comment">% find G bases and set them to 1</span>
+noncoding_C = (upper(coding)==<span class="string">'C'</span>); <span class="comment">% find C bases and set them to 1</span>
+ <span class="comment">% FFT of the sequence</span>
+noncoding_FT = abs(fft(noncoding_A,1024)).^2+abs(fft(noncoding_T,1024)).^2+abs(fft(noncoding_G,1024)).^2+abs(fft(noncoding_C,1024)).^2;
+noncoding_FT(1:10)=0;
+noncoding_FT(end-10:end)=0;
+ figure(9)
+title(<span class="string">'Non-Coding Sequence'</span>);
+ plot(noncoding_FT);
+</pre><pre class="codeoutput">
+ans =
+
+     5
+
+
+ans =
+
+     1
+
+</pre><img vspace="5" hspace="5" src="LAB2NEW_08.png" alt=""> <img vspace="5" hspace="5" src="LAB2NEW_09.png" alt=""> <pre class="codeinput"> <span class="comment">%Lab 2.3.1</span>
+ <span class="comment">%function -threebasefreq</span>
+<span class="comment"> %{
+</span><span class="comment"> function [threebase] = threebasefreq_stft (DNA_SEQ, WINDOW_LENGTH, NFFT)
+</span><span class="comment">
+</span><span class="comment">sequence_length = length(DNA_SEQ);
+</span><span class="comment">threebase = [];
+</span><span class="comment">% Convert sequence to binary
+</span><span class="comment">for i = 1:sequence_length-WINDOW_LENGTH+1
+</span><span class="comment">    b = WINDOW_LENGTH;
+</span><span class="comment">    A = (upper(DNA_SEQ(i:i+b-1))=='A'); % find A bases and set them to 1
+</span><span class="comment">    T = (upper(DNA_SEQ(i:i+b-1))=='T'); % find T bases and set them to 1
+</span><span class="comment">    G = (upper(DNA_SEQ(i:i+b-1))=='G'); % find G bases and set them to 1
+</span><span class="comment">    C = (upper(DNA_SEQ(i:i+b-1))=='C'); % find C bases and set them to 1
+</span><span class="comment">    % FFT of the window
+</span><span class="comment">    FT = abs(fft(A,NFFT)).^2+abs(fft(T,NFFT)).^2+abs(fft(G,NFFT)).^2+abs(fft(C,NFFT)).^2;
+</span><span class="comment">    threebase = [threebase, FT(floor(NFFT/3))];
+</span><span class="comment">
+</span><span class="comment">end
+</span><span class="comment">%}
+</span>
+Threebaseperiodicity_vs_position = threebasefreq_stft (hbb.Sequence,100,1024);
+figure(10)
+Threebaseperiodicity_vs_position(1:10)=0;
+Threebaseperiodicity_vs_position(end-10:end)=0;
+plot(Threebaseperiodicity_vs_position)
+title(<span class="string">'Threebaseperiodicity(100)'</span>);
+
+Threebaseperiodicity_vs_position = threebasefreq_stft (hbb.Sequence,1000,1024);
+Threebaseperiodicity_vs_position(1:10)=0;
+Threebaseperiodicity_vs_position(end-10:end)=0;
+figure(11)
+plot(Threebaseperiodicity_vs_position)
+title(<span class="string">'Threebaseperiodicity(1000)'</span>);
+</pre><img vspace="5" hspace="5" src="LAB2NEW_10.png" alt=""> <img vspace="5" hspace="5" src="LAB2NEW_11.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Lab 2
+
+%%
+%Lab 2.1.1
+%%
+% 1. How many hits did 'hbb' get?
+% url was: https://www.ncbi.nlm.nih.gov/gene/?term=hbb
+% Found 31 databases for hbb 
+% Results Gene-1561  and Nucleotide-9006 
+
+
+
+%%
+% 3. hbb AND human[orgn]
+% found 27 databases Gene 89 Nucleotide 280
+
+%%
+% 4. Explore the HBB hemoglobin  subunit beta record
+% http://www.ncbi.nlm.nih.gov/gene/3043
+
+%%
+% 5. hbb, human, and RefSeqGene query
+% https://www.ncbi.nlm.nih.gov/nuccore/28380636
+
+%% 
+% 6. We aim to obtain whole region and do analysis of 81,706 bp of linear DNA
+
+%% Lab 2.1.2
+
+%%
+% 1. Generate one second of a cosine 
+ws = 10; % Hz
+Fs = 100; % Hz
+% Assign signal to x and have tt as time axis
+t = 0:1/Fs:1;
+x = cos(2*pi*ws*t); % Create a cosine wave with frequency 10Hz, sampled at 100 Hz
+tt = linspace(0,1000) % From 0 to 1000 seconds
+figure(1);
+plot(t,x) % Plot the cosine wave
+title({'Cosine'})
+xlabel('time(seconds)')
+ylabel('Amplitude')
+%%
+% 2. Take FFT, 64 points (1-65)
+fft_out = fft(x(1:64)); % Take fft of signal and then shift zero-frequency to center of spectrum
+
+
+%%
+% 3. Plot magnitude of 64-point FFT at range of 0 to 63
+figure(2);
+title('64-FFT')
+xlabel('Frequency')
+ylabel('Amplitude')
+plot((0:63), abs(fft_out)/length(fft_out))
+
+%%
+% From the magnitude plot, we can see that the x axis does
+% not reflect the signal properly. The two large peaks should
+% represent the 10 Hz frequency of the signal, and ideally
+% fft should be centered at 0.
+
+%%
+dF = Fs/64; 
+freq = -Fs/2:dF:Fs/2-dF;
+figure(3);
+plot(freq, abs(fft_out)/64) % Plot fft of the signal before shifting the graph
+
+%%
+% From the plot, we can see that the frequency
+fft_out = fftshift(fft(x(1:64)));
+figure(4);
+%The shifted plot which is centered at 0
+title('Frequency components centered about 0')
+xlabel('Frequency')
+ylabel('Amplitude')
+plot(freq, abs(fft_out)/64)
+%%
+%N=1024 ; 1024 DFT
+ws = 10; % Hz
+Fs = 1500; % Hz
+% Assign signal to x and have tt as time axis
+t = 0:1/Fs:1;
+x = cos(2*pi*ws*t);
+
+
+fft_out = fft(x(1:1024)); % Take fft of signal and then shift zero-frequency to center of spectrum
+
+
+%%
+% 3. Plot magnitude of 1024-point FFT at range of 0 to 1023
+figure(5);
+title('64-FFT')
+xlabel('Frequency')
+ylabel('Amplitude')
+plot((0:1023), abs(fft_out)/length(fft_out))
+
+%%
+% From the magnitude plot, we can see that the x axis does
+% not reflect the signal properly. The two large peaks should
+% represent the 10 Hz frequency of the signal, and ideally
+% fft should be centered at 0.
+
+%%
+dF = Fs/1024; 
+freq = -Fs/2:dF:Fs/2-dF;
+figure(6);
+plot(freq, abs(fft_out)/1024) % Plot fft of the signal before shifting the graph
+
+%%
+% From the plot, we can see that the frequency
+fft_out = fftshift(fft(x(1:1024)));
+figure(7);
+%The shifted plot which is centered at 0
+title('Frequency components centered about 0')
+xlabel('Frequency')
+ylabel('Amplitude')
+plot(freq, abs(fft_out)/1024)
+
+%%
+% Lab2.2.1
+%1
+hbb = genbankread('hbb_region_chr11.gb');
+CDS = hbb.CDS;
+%Number of CDS regions in this sequence
+length(hbb.CDS)
+%2
+length(hbb.CDS(1))
+
+CDSrange = hbb.CDS.indices;
+A=hbb.Sequence(1); 
+%Coding and non coding sequence 
+[coding, noncoding] = separateCDS(hbb.Sequence, CDS(1).indices);
+%3
+%Input taken from the user for indice
+%user enters 2
+n=2;
+%Using the function separateCDS.m that was created 
+%{
+function [coding, noncoding] = separateCDS(sequence, CDS_indices)
+
+%   [coding, noncoding] = separateCDSregion(hbb.Sequence, CDS(1).indices)
+%   [coding, noncoding] = separateCDSregion(Sequence, CDS_indices)
+
+coding = []; % Create empty arrays to store the coding and noncoding sequences
+noncoding = [];
+
+% Find coding regions and store them
+for i=1:2:length(CDS_indices)-1
+    coding = [coding, sequence(CDS_indices(i):CDS_indices(i+1))];
+end
+
+
+
+% Find noncoding regions and store them
+for i=2:2:length(CDS_indices)-1
+   noncoding = [noncoding, sequence(CDS_indices(i):CDS_indices(i+1))]; 
+end
+
+
+%}
+
+
+[coding, noncoding] = separateCDS(hbb.Sequence, CDS(n).indices);
+
+%Lab 2.2.3
+coding_A = (upper(coding)=='A'); % find A bases and set them to 1
+coding_T = (upper(coding)=='T'); % find T bases and set them to 1
+coding_G = (upper(coding)=='G'); % find G bases and set them to 1
+coding_C = (upper(coding)=='C'); % find C bases and set them to 1
+ % FFT of the sequence
+coding_FT = abs(fft(coding_A,1024)).^2+abs(fft(coding_T,1024)).^2+abs(fft(coding_G,1024)).^2+abs(fft(coding_C,1024)).^2;
+coding_FT(1:10)=0;
+coding_FT(end-10:end)=0;
+figure(8)
+plot(coding_FT(100:1000));
+title('Coding Sequence');
+%xlim([100 1000]);
+noncoding_A = (upper(coding)=='A'); % find A bases and set them to 1
+noncoding_T = (upper(coding)=='T'); % find T bases and set them to 1
+noncoding_G = (upper(coding)=='G'); % find G bases and set them to 1
+noncoding_C = (upper(coding)=='C'); % find C bases and set them to 1
+ % FFT of the sequence
+noncoding_FT = abs(fft(noncoding_A,1024)).^2+abs(fft(noncoding_T,1024)).^2+abs(fft(noncoding_G,1024)).^2+abs(fft(noncoding_C,1024)).^2;
+noncoding_FT(1:10)=0;
+noncoding_FT(end-10:end)=0;
+ figure(9)
+title('Non-Coding Sequence');
+ plot(noncoding_FT);
+ 
+ %%
+ %Lab 2.3.1
+ %function -threebasefreq
+ %{
+ function [threebase] = threebasefreq_stft (DNA_SEQ, WINDOW_LENGTH, NFFT)
+
+sequence_length = length(DNA_SEQ);
+threebase = [];
+% Convert sequence to binary
+for i = 1:sequence_length-WINDOW_LENGTH+1
+    b = WINDOW_LENGTH;
+    A = (upper(DNA_SEQ(i:i+b-1))=='A'); % find A bases and set them to 1
+    T = (upper(DNA_SEQ(i:i+b-1))=='T'); % find T bases and set them to 1
+    G = (upper(DNA_SEQ(i:i+b-1))=='G'); % find G bases and set them to 1
+    C = (upper(DNA_SEQ(i:i+b-1))=='C'); % find C bases and set them to 1
+    % FFT of the window
+    FT = abs(fft(A,NFFT)).^2+abs(fft(T,NFFT)).^2+abs(fft(G,NFFT)).^2+abs(fft(C,NFFT)).^2;
+    threebase = [threebase, FT(floor(NFFT/3))];
+
+end
+%}
+ 
+Threebaseperiodicity_vs_position = threebasefreq_stft (hbb.Sequence,100,1024);
+figure(10)
+Threebaseperiodicity_vs_position(1:10)=0;
+Threebaseperiodicity_vs_position(end-10:end)=0;
+plot(Threebaseperiodicity_vs_position)
+title('Threebaseperiodicity(100)');
+
+Threebaseperiodicity_vs_position = threebasefreq_stft (hbb.Sequence,1000,1024);
+Threebaseperiodicity_vs_position(1:10)=0;
+Threebaseperiodicity_vs_position(end-10:end)=0;
+figure(11)
+plot(Threebaseperiodicity_vs_position)
+title('Threebaseperiodicity(1000)');
+
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>

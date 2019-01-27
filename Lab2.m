@@ -253,6 +253,7 @@ for i = 0:sequence_length-WINDOW_LENGTH-1
     C = (upper(DNA_SEQUENCE(a:b))=='C'); % find C bases and set them to 1
     % FFT of the window
     threebase = threebase +  abs(fft(A,NFFT)).^2+abs(fft(T,NFFT)).^2+abs(fft(G,NFFT)).^2+abs(fft(C,NFFT)).^2;
+    threebase = threebase/3;
     a = a + 1;
     b = b + 1;
 end

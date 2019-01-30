@@ -35,3 +35,39 @@ possible_nt_sequences = find_nt_seq(seqAA);
 % in the string. To access: a{amino_acid_index}(2:end), where a{1}(1) would
 % be the header that represents the single letter representation 
 
+
+
+%% Part 4
+
+%a. Obtain two highly similar E. Coli bacterial genomes NC 002655 and NC 002695. Is it
+%possible to take the global alignment of them with Matlab (show code and results)?
+%BLAST them and show results.
+%%
+% Check if file already exists, if it doesn't. Download file from genbank
+if exist('NC_002655.txt') == 2
+    % Bring file into matlab
+    seq1 = genbankread('NC_002655.txt');
+else
+    % Grab file and then bring it into matlab
+    getgenbank('NC_002655', 'toFile', 'NC_002655.txt');
+    seq1 = genbankread('NC_002655.txt');
+    fastawrite('NC_002655.fasta', 'Sequence', seq1)
+end
+
+if exist('NC_002695.txt') == 2
+    % Bring file into matlab
+    seq2 = genbankread('NC_002695.txt');
+else
+    % Grab file and then bring it into matlab
+    getgenbank('NC_002695', 'toFile', 'NC_002695.txt');
+    seq2 = genbankread('NC 002695.txt');
+    fastawrite('NC_002695.fasta', 'Sequence', seq2)
+end
+
+[Score, Alignment, Start] = nwalign(seq1,seq2)
+
+%[Data_blastn, RTOE_n] = blastncbi('MysSeq.fasta', 'blastn', 'database', 'nr')
+%blast_n = getblast(Data_blastn,'ToFile','blast_n.rpt')
+
+
+

@@ -1,0 +1,30 @@
+%% Bhautik Amin HW1
+
+% a. Find a protein sequence of hypothetical AF1226 (Positions 141-147)
+% Sequence of amino acids in single letter representation
+
+% Get sequence from genbank, what is the sequence
+% of amino acids from 141-147
+
+seq = getgenbank('AE000782','PartialSeq', [141 147], 'toFile', 'AE000782.txt');
+
+%%
+% Check if file already exists, if it doesn't. Download file from genbank
+if exist('nm_000520.txt') == 2
+    % Bring file into matlab
+    s = genbankread('nm_000520.txt');
+else
+    % Grab file and then bring it into matlab
+    getgenbank('nm_000520', 'toFile', 'nm_000520.txt');
+    s = genbankread('nm_000520.txt');
+end
+
+%
+seqAA = nt2aa(seq.Sequence)
+
+
+% Using the Matlab function from part b)
+% calculate the number of sequences that could
+% give rise to the 7 amino acid sequence found in part a).
+
+

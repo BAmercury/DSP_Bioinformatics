@@ -1,0 +1,93 @@
+LOCUS       AE000782                   7 bp    DNA     linear   BCT 31-JAN-2014
+DEFINITION  Archaeoglobus fulgidus DSM 4304, complete genome.
+ACCESSION   AE000782 REGION: 141..147
+VERSION     AE000782.1
+DBLINK      BioProject: PRJNA104
+            BioSample: SAMN02603985
+KEYWORDS    .
+SOURCE      Archaeoglobus fulgidus DSM 4304
+  ORGANISM  Archaeoglobus fulgidus DSM 4304
+            Archaea; Euryarchaeota; Archaeoglobi; Archaeoglobales;
+            Archaeoglobaceae; Archaeoglobus.
+REFERENCE   1  (bases 1 to 7)
+  AUTHORS   Klenk,H.P., Clayton,R.A., Tomb,J., White,O., Nelson,K.E.,
+            Ketchum,K.A., Dodson,R.J., Gwinn,M., Hickey,E.K., Peterson,J.D.,
+            Richardson,D.L., Kerlavage,A.R., Graham,D.E., Kyrpides,N.C.,
+            Fleischmann,R.D., Quackenbush,J., Lee,N.H., Sutton,G.G., Gill,S.,
+            Kirkness,E.F., Dougherty,B.A., McKenney,K., Adams,M.D., Loftus,B.,
+            Peterson,S., Reich,C.I., McNeil,L.K., Badger,J.H., Glodek,A.,
+            Zhou,L., Overbeek,R., Gocayne,J.D., Weidman,J.F., McDonald,L.,
+            Utterback,T., Cotton,M.D., Spriggs,T., Artiach,P., Kaine,B.P.,
+            Sykes,S.M., Sadow,P.W., D'Andrea,K.P., Bowman,C., Fujii,C.,
+            Garland,S.A., Mason,T.M., Olsen,G.J., Fraser,C.M., Smith,H.O.,
+            Woese,C.R. and Venter,J.C.
+  TITLE     The complete genome sequence of the hyperthermophilic,
+            sulphate-reducing archaeon Archaeoglobus fulgidus
+  JOURNAL   Nature 390 (6658), 364-370 (1997)
+   PUBMED   9389475
+REFERENCE   2  (bases 1 to 7)
+  AUTHORS   Klenk,H.P., Clayton,R.A., Tomb,J.-F., White,O., Nelson,K.E.,
+            Ketchum,K.A., Dodson,R.J., Gwinn,M., Hickey,E.K., Peterson,J.D.,
+            Richardson,D.L., Kerlavage,A.R., Graham,D.E., Kyrpides,N.C.,
+            Fleischmann,R.D., Quackenbush,J., Lee,N.H., Sutton,G.G., Gill,S.,
+            Kirkness,E.F., Dougherty,B.A., McKenney,K., Adams,M.D., Loftus,B.,
+            Peterson,S., Reich,C.I., McNeil,L.K., Badger,J.H., Glodek,A.,
+            Zhou,L., Overbeek,R., Gocayne,J.D., Weidman,J.F., McDonald,L.,
+            Utterback,T., Cotton,M.D., Spriggs,T., Artiach,P., Kaine,B.P.,
+            Sykes,S.M., Sadow,P.W., D'Andrea,K.P., Bowman,C., Fujii,C.,
+            Garland,S.A., Mason,T.M., Olsen,G.J., Fraser,C.M., Smith,H.O.,
+            Woese,C.R. and Venter,J.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-DEC-1997) The Institute for Genomic Research, 9712
+            Medical Center Dr, Rockville, MD 20850, USA
+  REMARK    In order to show the genes in ascending order on the genome, the
+            origin of this version has been moved by TIGR to position 2093570
+            of the original version and the opposite strand is shown from the
+            original version.
+COMMENT     On or before Jan 6, 2006 this sequence version replaced AE000943.1,
+            AE000944.1, AE000945.1, AE000946.1, AE000947.1, AE000948.1,
+            AE000949.1, AE000950.1, AE000951.1, AE000952.1, AE000953.1,
+            AE000954.1, AE000955.1, AE000956.1, AE000957.1, AE000958.1,
+            AE000959.1, AE000960.1, AE000961.1, AE000962.1, AE000963.1,
+            AE000964.1, AE000965.1, AE000966.1, AE000967.1, AE000968.1,
+            AE000969.1, AE000970.1, AE000971.1, AE000972.1, AE000973.1,
+            AE000974.1, AE000975.1, AE000976.1, AE000977.1, AE000978.1,
+            AE000979.1, AE000980.1, AE000981.1, AE000982.1, AE000983.1,
+            AE000984.1, AE000985.1, AE000986.1, AE000987.1, AE000988.1,
+            AE000989.1, AE000990.1, AE000991.1, AE000992.1, AE000993.1,
+            AE000994.1, AE000995.1, AE000996.1, AE000997.1, AE000998.1,
+            AE000999.1, AE001000.1, AE001001.1, AE001002.1, AE001003.1,
+            AE001004.1, AE001005.1, AE001006.1, AE001007.1, AE001008.1,
+            AE001009.1, AE001010.1, AE001011.1, AE001012.1, AE001013.1,
+            AE001014.1, AE001015.1, AE001016.1, AE001017.1, AE001018.1,
+            AE001019.1, AE001020.1, AE001021.1, AE001022.1, AE001023.1,
+            AE001024.1, AE001025.1, AE001026.1, AE001027.1, AE001028.1,
+            AE001029.1, AE001030.1, AE001031.1, AE001032.1, AE001033.1,
+            AE001034.1, AE001035.1, AE001036.1, AE001037.1, AE001038.1,
+            AE001039.1, AE001040.1, AE001041.1, AE001042.1, AE001043.1,
+            AE001044.1, AE001045.1, AE001046.1, AE001047.1, AE001048.1,
+            AE001049.1, AE001050.1, AE001051.1, AE001052.1, AE001053.1,
+            AE001054.1, AE001055.1, AE001056.1, AE001057.1, AE001058.1,
+            AE001059.1, AE001060.1, AE001061.1, AE001062.1, AE001063.1,
+            AE001064.1, AE001065.1, AE001066.1, AE001067.1, AE001068.1,
+            AE001069.1, AE001070.1, AE001071.1, AE001072.1, AE001073.1,
+            AE001074.1, AE001075.1, AE001076.1, AE001077.1, AE001078.1,
+            AE001079.1, AE001080.1, AE001081.1, AE001082.1, AE001083.1,
+            AE001084.1, AE001085.1, AE001086.1, AE001087.1, AE001088.1,
+            AE001089.1, AE001090.1, AE001091.1, AE001092.1, AE001093.1,
+            AE001094.1, AE001095.1, AE001096.1, AE001097.1, AE001098.1,
+            AE001099.1, AE001100.1, AE001101.1, AE001102.1, AE001103.1,
+            AE001104.1, AE001105.1, AE001106.1, AE001107.1, AE001108.1,
+            AE001109.1, AE001110.1, AE001111.1, AE001112.1, AE001113.1,
+            AE001114.1.
+FEATURES             Location/Qualifiers
+     source          1..7
+                     /organism="Archaeoglobus fulgidus DSM 4304"
+                     /mol_type="genomic DNA"
+                     /strain="DSM 4304"
+                     /db_xref="taxon:224325"
+                     /note="type strain of Archaeoglobus fulgidus"
+ORIGIN      
+        1 actgatg
+//
+

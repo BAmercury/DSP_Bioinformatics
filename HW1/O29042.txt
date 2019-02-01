@@ -1,0 +1,59 @@
+LOCUS       Y1226_ARCFU                7 aa            linear   BCT 16-JAN-2019
+DEFINITION  RecName: Full=Uncharacterized protein AF_1226; Flags: Precursor.
+ACCESSION   O29042 REGION: 141..147
+VERSION     O29042.1
+DBSOURCE    UniProtKB: locus Y1226_ARCFU, accession O29042;
+            class: standard.
+            created: Jun 20, 2001.
+            sequence updated: Jan 1, 1998.
+            annotation updated: Jan 16, 2019.
+            xrefs: AE000782.1, AAB90024.1, A69403, WP_010878721.1
+            xrefs (non-sequence databases): ProteinModelPortal:O29042,
+            STRING:224325.AF1226, EnsemblBacteria:AAB90024,
+            EnsemblBacteria:AAB90024, EnsemblBacteria:AF_1226, GeneID:24794830,
+            KEGG:afu:AF_1226, eggNOG:arCOG03412, eggNOG:ENOG410Y1WW,
+            Proteomes:UP000002199
+KEYWORDS    Complete proteome; Reference proteome; Signal.
+SOURCE      Archaeoglobus fulgidus DSM 4304
+  ORGANISM  Archaeoglobus fulgidus DSM 4304
+            Archaea; Euryarchaeota; Archaeoglobi; Archaeoglobales;
+            Archaeoglobaceae; Archaeoglobus.
+REFERENCE   1  (residues )
+  AUTHORS   Klenk,H.P., Clayton,R.A., Tomb,J.F., White,O., Nelson,K.E.,
+            Ketchum,K.A., Dodson,R.J., Gwinn,M., Hickey,E.K., Peterson,J.D.,
+            Richardson,D.L., Kerlavage,A.R., Graham,D.E., Kyrpides,N.C.,
+            Fleischmann,R.D., Quackenbush,J., Lee,N.H., Sutton,G.G., Gill,S.,
+            Kirkness,E.F., Dougherty,B.A., McKenney,K., Adams,M.D., Loftus,B.,
+            Peterson,S., Reich,C.I., McNeil,L.K., Badger,J.H., Glodek,A.,
+            Zhou,L., Overbeek,R., Gocayne,J.D., Weidman,J.F., McDonald,L.,
+            Utterback,T., Cotton,M.D., Spriggs,T., Artiach,P., Kaine,B.P.,
+            Sykes,S.M., Sadow,P.W., D'Andrea,K.P., Bowman,C., Fujii,C.,
+            Garland,S.A., Mason,T.M., Olsen,G.J., Fraser,C.M., Smith,H.O.,
+            Woese,C.R. and Venter,J.C.
+  TITLE     The complete genome sequence of the hyperthermophilic,
+            sulphate-reducing archaeon Archaeoglobus fulgidus
+  JOURNAL   Nature 390 (6658), 364-370 (1997)
+   PUBMED   9389475
+  REMARK    NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].;
+            STRAIN=ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 / NBRC 100126
+            Erratum:[Nature 1998 Jul 2;394(6688):101]
+COMMENT     On Feb 28, 2006 this sequence version replaced gi:7483579.
+FEATURES             Location/Qualifiers
+     source          1..7
+                     /organism="Archaeoglobus fulgidus DSM 4304"
+                     /db_xref="taxon:224325"
+     gene            <1..>7
+                     /locus_tag="AF_1226"
+     Protein         <1..>7
+                     /product="Uncharacterized protein AF_1226"
+                     /UniProtKB_evidence="Inferred from homology"
+     Region          <1..>7
+                     /region_name="Mature chain"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="Uncharacterized protein AF_1226.
+                     /FTId=PRO_0000013656."
+ORIGIN      
+        1 harvard
+//
+

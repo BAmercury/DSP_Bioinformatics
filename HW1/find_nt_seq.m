@@ -1,11 +1,19 @@
 function possible_cat = find_nt_seq(desired_aa_sequence)
+%        Function takes in desired Amino Acid Sequence, in single letter
+%        representation (Note that the characters must all be capital
+%        letters! Function returns possible nucleotide codons that make up
+%        this given amino acid sequence. Function returns data formatted as
+%        indexible cell array. Standard usagae:
+%        possible_cat = find_nt_seq('ARND');
+
+
     % Generate nt to aa map
     map = revgeneticcode(1, 'Alphabet', 'DNA');
-    % Query map with desired aa sequence (Desired AA should be in three
-    % code format)
-    possible_cat = {};
-    for (i=1:strlength(desired_aa_sequence))
+    possible_cat = {}; % Create empty cell array to store data
+    for (i=1:strlength(desired_aa_sequence)) % Iterate through each amino acid in sequence
         desired_aa = desired_aa_sequence(i);
+        % This switch stastement is used to extract the possible nucleotide
+        % sequences that correlate to desired amino acid character
         switch desired_aa
             case 'A'
                 possible_nt_seq = map.A;
@@ -55,6 +63,8 @@ function possible_cat = find_nt_seq(desired_aa_sequence)
                 possible_nt_seq = "Please input valid sequence";
             
         end
+        % Append given NT data to cell array and iterate through the amino
+        % acid sequence string again
         possible_cat{i}(:,1) = vertcat(desired_aa, possible_nt_seq');
     end
         

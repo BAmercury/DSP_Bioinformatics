@@ -1,10 +1,8 @@
 function possible_cat = aa2nt_cgbiased(desired_aa_sequence)
     % Generate nt to aa map
     map = revgeneticcode(1, 'Alphabet', 'DNA');
-    % Query map with desired aa sequence (Desired AA should be in three
-    % code format)
     possible_cat = {};
-    for (i=1:strlength(desired_aa_sequence))
+    for (i=1:strlength(desired_aa_sequence)) % See find_nt_seq.m for details
         desired_aa = desired_aa_sequence(i);
         switch desired_aa
             case 'A'
@@ -55,9 +53,9 @@ function possible_cat = aa2nt_cgbiased(desired_aa_sequence)
                 possible_nt_seq = "Please input valid sequence";
             
         end
-        
-        highest_nt_cgbiased = find_cg_value(possible_nt_seq);
-        possible_cat{i}(:,1) = vertcat(desired_aa, highest_nt_cgbiased);
+        %% Here is where we add heuristic to filter only codons with highest cg content
+        highest_nt_cgbiased = find_cg_value(possible_nt_seq); % Wrote a helper function to count cg content
+        possible_cat{i}(:,1) = vertcat(desired_aa, highest_nt_cgbiased); % Append the nt with highest cg
     end
         
 

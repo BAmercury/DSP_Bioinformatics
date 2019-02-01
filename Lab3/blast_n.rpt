@@ -1,0 +1,2114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="jig" content="ncbitoggler ncbiautocomplete"/>
+<meta name="ncbitoggler" content="animation:'none'"/>
+
+
+<meta name="referrer" content="origin-when-cross-origin" />
+<meta name="ncbi_app" content="blast" />
+<meta name="ncbi_pdid" content="oldblastresults" />
+
+<meta name="ncbi_db" content="nr" />
+<meta name="ncbi_program" content="blastn" />
+<meta name="ncbi_algorithm" content="blastn" />
+
+<meta name="ncbi_stat" content="false" />
+<meta name="ncbi_sessionid" content="55BA20C9C53929F1_0000SID" />
+<meta name="ncbi_phid" content="55BA20C9C53929F10000000000000001" />
+<script type="text/javascript"> var ncbi_startTime = new Date(); </script>
+<title>NCBI Blast:Nucleotide Sequence (508 letters)</title>
+<script type="text/javascript" src="/core/jig/1.14.8/js/jig.min.js             "></script>
+<script type="text/javascript">    jQuery.getScript("/core/alerts/alerts.js", function() {
+        galert(['div#header', 'body > *:nth-child(1)'])
+    });</script>
+<link rel="stylesheet" type="text/css" href="css/header.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/google-fonts.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/footer.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/blastRes.css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="css/descriptionsIE.css" media="screen" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/blastReq.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/results.css" media="screen" />
+
+
+</head>
+
+<body id="type-a" class="noToggleCheck " >
+<div id="wrap">
+		        	
+    <header id="page_header" role="banner">
+    <ul class="skip_nav">
+        <li><a accesskey="1" title="NCBI Homepage" href="https://www.ncbi.nlm.nih.gov/">NCBI Home</a></li>
+        <li><a accesskey="2" title="MyNCBI" href="https://www.ncbi.nlm.nih.gov/myncbi">Sign in to NCBI</a></li>
+        <li><a accesskey="3" title="Skip to main content" href="#content">Skip to Main Content</a></li>
+        <li><a accesskey="4" title="Skip to navigation" href="#navcontent">Skip to Navigation</a></li>
+        <li><a accesskey="0" title="About NCBI Accesskeys" href="https://www.ncbi.nlm.nih.gov/guide/browsers/#accesskeys">About NCBI Accesskeys</a></li>
+    </ul>
+    <nav class="blue_nav_bar">
+            <div class="nih">
+                <a id="page_header_6" href="https://www.nih.gov/" class="left norm_height">
+                    <img src="images/nih_logo.svg" alt="NIH logo" class="left"/></a>
+                <a id="page_header_7" href="https://www.nlm.nih.gov/" class="left header_link">U.S. National Library of Medicine</a>
+            </div>
+
+            <div class="left">
+                <img src="images/arrow.svg" class="left norm_height" alt=""/>
+            </div>
+
+            
+            <div class="ncbi">
+                <a id="page_header_8" href="https://www.ncbi.nlm.nih.gov/" class="header_link">
+                    <span class="ncbi_name">NCBI</span>
+                    <span class="med_hidden">National Center for Biotechnology Information</span></a>
+
+                    <div class="right sign-in">
+                        <ul class="myncbi2">
+                            <li id="myncbiusername">
+                                <span id="mnu">
+                                  <a id="mnu_0" href="https://www.ncbi.nlm.nih.gov/account/settings/" title="Edit account settings"></a>
+                                </span>
+                            </li>
+                            <li id="myncbi"><a id="myncbi_0"  href="https://www.ncbi.nlm.nih.gov/myncbi/">My NCBI</a></li>
+                            <li id="myncbi_sign_in"><a id="myncbi_sign_in_0" href="https://www.ncbi.nlm.nih.gov/account/?back_url=https%3A%2F%2Fblast%2Encbi%2Enlm%2Enih%2Egov%2FBlast%2Ecgi%3FALIGNMENTS%3D50%26ALIGNMENT%5FVIEW%3DPairwise%26ALIGNMENT%5FVIEW%3DPairwise%26BLAST%5FPROGRAMS%3Dblastn%26CMD%3DGet%26DATABASE%3Dnr%26DESCRIPTIONS%3D100%26DYNAMIC%5FFORMAT%3Doff%26ENTREZ%5FQUERY%3D%26EXPECT%3D10%26FILTER%3DL%26FORMAT%5FOBJECT%3DAlignment%26FORMAT%5FTYPE%3Dtext%26FORMAT%5FTYPE%3DHTML%26GAPCOSTS%3D5%2B2%26GET%5FSEQUENCE%3Dtrue%26HSP%5FRANGE%5FMAX%3D0%26JOB%5FTITLE%3DNucleotide%2BSequence%2B%28508%2Bletters%29%26LINE%5FLENGTH%3D60%26MASK%5FCHAR%3D2%26MASK%5FCOLOR%3D1%26MATCH%5FSCORES%3D2%2C%2D3%26MAX%5FNUM%5FSEQ%3D100%26MYNCBI%5FUSER%3D10620995123%26MYNCBI%5FUSER%3D10620995123%26MYNCBI%5FUSER%3D10620995053%26NCBI%5FGI%3Don%26NCBI%5FGI%3Dfalse%26NEW%5FFORMATTER%3Don%26NEW%5FVIEW%3Dfalse%26NUM%5FOVERVIEW%3D100%26OLD%5FVIEW%3Dfalse%26PAGE%3DNucleotides%26PHI%5FPATTERN%3D%26PROGRAM%3Dblastn%26QUERY%3DATGAATGTCCGAACCATAAACTATAAAGATTCTAGTAATAGTCACGAATTTACTCGCTCATTAAGACAAA%250ACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTAAATCTTATTTATAATGTATATAATGAATGGGA%250AAAAATTTTTCAATGGAAAAGATAAAAATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCT%250ACTTGGAACAGAAAATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTATCAATGGG%250AGGAGGCTTCCAAATGACTTCAGCAGTAATACCGAAAAACTTTACAAAGAACTTGTTTCCCTTACTTCTAC%250ATTTACTTCATTGGATCCAAGATGAAACTCCAGATCATATAAAATCCTCATTCTCCATTCCTCTACCAGAC%250AATGATAATTGACAGCAAAACTCATTTATTAAGAATTATACATTATCCTCCCTTAGATGGTACAGAAGAAC%250ACAGAGGCAATTAGAGGTG%250A%26RID%3D574MKTV3015%26SHOW%5FCDS%5FFEATURE%3Dfalse%26SHOW%5FLINKOUT%3Dtrue%26SHOW%5FOVERVIEW%3Dtrue%26USER%5FTYPE%3D2%26USER%5FTYPE%3D2%26WORD%5FSIZE%3D11%26WWW%5FBLAST%5FTYPE%3Dnewblast">Sign in to NCBI</a></li>
+                            <li id="myncbi_register"><a id="myncbi_register_0" href="https://www.ncbi.nlm.nih.gov/account/register/?back_url=https%3A%2F%2Fblast%2Encbi%2Enlm%2Enih%2Egov%2FBlast%2Ecgi%3FALIGNMENTS%3D50%26ALIGNMENT%5FVIEW%3DPairwise%26ALIGNMENT%5FVIEW%3DPairwise%26BLAST%5FPROGRAMS%3Dblastn%26CMD%3DGet%26DATABASE%3Dnr%26DESCRIPTIONS%3D100%26DYNAMIC%5FFORMAT%3Doff%26ENTREZ%5FQUERY%3D%26EXPECT%3D10%26FILTER%3DL%26FORMAT%5FOBJECT%3DAlignment%26FORMAT%5FTYPE%3Dtext%26FORMAT%5FTYPE%3DHTML%26GAPCOSTS%3D5%2B2%26GET%5FSEQUENCE%3Dtrue%26HSP%5FRANGE%5FMAX%3D0%26JOB%5FTITLE%3DNucleotide%2BSequence%2B%28508%2Bletters%29%26LINE%5FLENGTH%3D60%26MASK%5FCHAR%3D2%26MASK%5FCOLOR%3D1%26MATCH%5FSCORES%3D2%2C%2D3%26MAX%5FNUM%5FSEQ%3D100%26MYNCBI%5FUSER%3D10620995123%26MYNCBI%5FUSER%3D10620995123%26MYNCBI%5FUSER%3D10620995053%26NCBI%5FGI%3Don%26NCBI%5FGI%3Dfalse%26NEW%5FFORMATTER%3Don%26NEW%5FVIEW%3Dfalse%26NUM%5FOVERVIEW%3D100%26OLD%5FVIEW%3Dfalse%26PAGE%3DNucleotides%26PHI%5FPATTERN%3D%26PROGRAM%3Dblastn%26QUERY%3DATGAATGTCCGAACCATAAACTATAAAGATTCTAGTAATAGTCACGAATTTACTCGCTCATTAAGACAAA%250ACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTAAATCTTATTTATAATGTATATAATGAATGGGA%250AAAAATTTTTCAATGGAAAAGATAAAAATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCT%250ACTTGGAACAGAAAATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTATCAATGGG%250AGGAGGCTTCCAAATGACTTCAGCAGTAATACCGAAAAACTTTACAAAGAACTTGTTTCCCTTACTTCTAC%250ATTTACTTCATTGGATCCAAGATGAAACTCCAGATCATATAAAATCCTCATTCTCCATTCCTCTACCAGAC%250AATGATAATTGACAGCAAAACTCATTTATTAAGAATTATACATTATCCTCCCTTAGATGGTACAGAAGAAC%250ACAGAGGCAATTAGAGGTG%250A%26RID%3D574MKTV3015%26SHOW%5FCDS%5FFEATURE%3Dfalse%26SHOW%5FLINKOUT%3Dtrue%26SHOW%5FOVERVIEW%3Dtrue%26USER%5FTYPE%3D2%26USER%5FTYPE%3D2%26WORD%5FSIZE%3D11%26WWW%5FBLAST%5FTYPE%3Dnewblast">Register</a></li>
+                            <li id="myncbi_sign_out"><a id="myncbi_sign_out_0" href="https://www.ncbi.nlm.nih.gov/account/signout/?back_url=https%3A%2F%2Fblast%2Encbi%2Enlm%2Enih%2Egov%2FBlast%2Ecgi%3FALIGNMENTS%3D50%26ALIGNMENT%5FVIEW%3DPairwise%26ALIGNMENT%5FVIEW%3DPairwise%26BLAST%5FPROGRAMS%3Dblastn%26CMD%3DGet%26DATABASE%3Dnr%26DESCRIPTIONS%3D100%26DYNAMIC%5FFORMAT%3Doff%26ENTREZ%5FQUERY%3D%26EXPECT%3D10%26FILTER%3DL%26FORMAT%5FOBJECT%3DAlignment%26FORMAT%5FTYPE%3Dtext%26FORMAT%5FTYPE%3DHTML%26GAPCOSTS%3D5%2B2%26GET%5FSEQUENCE%3Dtrue%26HSP%5FRANGE%5FMAX%3D0%26JOB%5FTITLE%3DNucleotide%2BSequence%2B%28508%2Bletters%29%26LINE%5FLENGTH%3D60%26MASK%5FCHAR%3D2%26MASK%5FCOLOR%3D1%26MATCH%5FSCORES%3D2%2C%2D3%26MAX%5FNUM%5FSEQ%3D100%26MYNCBI%5FUSER%3D10620995123%26MYNCBI%5FUSER%3D10620995123%26MYNCBI%5FUSER%3D10620995053%26NCBI%5FGI%3Don%26NCBI%5FGI%3Dfalse%26NEW%5FFORMATTER%3Don%26NEW%5FVIEW%3Dfalse%26NUM%5FOVERVIEW%3D100%26OLD%5FVIEW%3Dfalse%26PAGE%3DNucleotides%26PHI%5FPATTERN%3D%26PROGRAM%3Dblastn%26QUERY%3DATGAATGTCCGAACCATAAACTATAAAGATTCTAGTAATAGTCACGAATTTACTCGCTCATTAAGACAAA%250ACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTAAATCTTATTTATAATGTATATAATGAATGGGA%250AAAAATTTTTCAATGGAAAAGATAAAAATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCT%250ACTTGGAACAGAAAATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTATCAATGGG%250AGGAGGCTTCCAAATGACTTCAGCAGTAATACCGAAAAACTTTACAAAGAACTTGTTTCCCTTACTTCTAC%250ATTTACTTCATTGGATCCAAGATGAAACTCCAGATCATATAAAATCCTCATTCTCCATTCCTCTACCAGAC%250AATGATAATTGACAGCAAAACTCATTTATTAAGAATTATACATTATCCTCCCTTAGATGGTACAGAAGAAC%250ACAGAGGCAATTAGAGGTG%250A%26RID%3D574MKTV3015%26SHOW%5FCDS%5FFEATURE%3Dfalse%26SHOW%5FLINKOUT%3Dtrue%26SHOW%5FOVERVIEW%3Dtrue%26USER%5FTYPE%3D2%26USER%5FTYPE%3D2%26WORD%5FSIZE%3D11%26WWW%5FBLAST%5FTYPE%3Dnewblast">Sign Out</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+
+        <div class="bg-gray header-div">
+        <nav class="top-nav" id="navcontent" role="navigation">
+            <a class="lf" href="Blast.cgi">BLAST <sup>&reg;</sup></a> <span id="brc"><span class="brcrmbsign">&raquo;</span> <a href="Blast.cgi?PAGE=Nucleotides&amp;PROGRAM=blastn&amp;PAGE_TYPE=BlastSearch&amp;BLAST_SPEC=">blastn suite</a> <span class="brcrmbsign">&raquo;</span> RID-574MKTV3015</span>
+            <span class="rf">            
+            <ul id="blnav">
+                <li  class="first "><a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastHome" title="BLAST Home">Home</a></li>
+                <li  class="recent "><a href="Blast.cgi?CMD=GetSaved&amp;RECENT_RESULTS=on" title="Unexpired BLAST jobs">Recent Results</a></li>                
+                <li  class="saved "><a href="Blast.cgi?CMD=GetSaved" title="Saved sets of BLAST search parameters">Saved Strategies</a></li>
+                <li  class= "last documentation "> <a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs" title="BLAST documentation">Help</a></li>                
+            </ul>
+            </span>
+        </nav>
+        </div>                
+        </header>
+
+        <div id="content-wrap">
+
+                <div class="pageTitle">                            
+                   BLAST Results
+                </div>
+		<div class="inlineDiv resHeader resPage">
+				   
+                </div>
+                <ul class="print-log-res"><li></li></ul>
+
+                <!-- CDD info for old design -->
+                
+                
+                
+
+
+                				
+				
+
+                <div id="content">                              		
+                                
+                <!--<ul id="msg" class="msg"><li class=""><p class=""></p><p class=""></p><p class=""></p></li></ul>-->
+                <ul id="msg" class="msg"><li class=""></li></ul>                
+                <a  href="#" class="resLink resPage" id="searchOptions" submitForm="setSavedOptions">Edit and Resubmit</a>
+<a  href="#" class="resLink resPage hidden" id="saveSearchOptions" submitForm="saveOptions">Save Search Strategies</a>
+<span class="reslink  resPage" >[Sign in above to save your search strategy]</span>	
+<a  id="showFormat" class="resLink resPage resArrowLinkB ui-ncbitoggler" data-jig="ncbitoggler" data-ncbitoggler-toggles="FormatForm" href="#">
+<span class="ui-ncbitoggler-master-text">Formatting options </span>
+<span class="ui-icon ui-icon-triangle-1-e"></span>
+</a>
+<a  id="showDownload" class="resLink resPage resArrowLinkB ui-ncbitoggler" data-jig="ncbitoggler" data-ncbitoggler-toggles="FormatDownload" href="#">
+<span class="ui-ncbitoggler-master-text">Download</span>
+<span class="ui-icon ui-icon-triangle-1-e"></span>
+</a>
+<span id="hnr">
+<a id="ytb" class="ytb " title="External link to YouTube" href="https://www.youtube.com/playlist?list=PLH-TjWpFfWrtjzMCIvUe-YbrlIeFQlKMq" target="lnk574MKTV3015">How to read this page</a>
+<a id="brFtp" class="" title="Blast report description" href="ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_NewBLAST.pdf" target="lnk574MKTV3015">Blast report description</a>
+</span>
+<a class="ncbi-feedback-button" title="Questions and comments" href="https://support.nlm.nih.gov/knowledgebase/category/?id=CAT-01239" target="lnk574MKTV3015">Questions/comments</a>  
+                
+
+                <form action="Blast.cgi" enctype="application/x-www-form-urlencoded" method="POST" id="results">
+                
+                <input name="QUERY_INDEX" type="hidden" value="0">                
+                <input name="_PGR" type="hidden" value="" >
+                <input id="seqViewUrl" type="hidden" value="https://www.ncbi.nlm.nih.gov" >
+                <input id="userAgent" type="hidden" value="">
+                <input name="CMD" type="hidden" value="Get">                
+                </form>
+                <!-- Reformat and downlaod for new design -->
+                <div class="ui-helper-reset" aria-live="assertive" >  
+<form action="Blast.cgi" enctype="application/x-www-form-urlencoded" method="post" name="FormatForm" id="FormatForm" class="resbox ui-ncbitoggler-slave ">
+<table class="options blastn ">
+<tr>
+<td class="frh" colspan=2>
+<div class="fi">
+<div class="tb">Formatting options</div>
+<input type="image"  border="0" id="onPageReformat" src="css/images/reformat.jpg" class="blastbutton"  alt="Reformat"  mouseovImg="css/images/reformatOver.jpg" mouseoutImg="css/images/reformat.jpg" mousedownImg="css/images/reformatDown.jpg" mouseupImg="css/images/reformatOver.jpg"  />
+</div>
+</tr>
+<tr class="paramSet xgl">
+<td class="hd"><label for="FORMAT_OBJECT">Show</label></td>
+<td>
+<div class="fi">
+<input type="hidden" id="FORMAT_OBJECT" value="Alignment" name="FORMAT_OBJECT" />
+<label for="FORMAT_TYPE" id="nft">Alignment as</label>
+<select name="FORMAT_TYPE" id="FORMAT_TYPE" class="reset" defVal="HTML">
+<option value="HTML"  >HTML</option>
+<option value="Text"  >Plain text</option>
+
+</select>
+
+<span id="advView" class="">
+<span class=""><input name="OLD_VIEW" id="OLD_VIEW" type="checkbox" class="cb reset" defVal="unchecked" false />
+<label for="OLD_VIEW">Old View</label></span>
+</span>
+<a class="resetAll" id="resetAll" >Reset form to defaults</a>
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Alignments object formatting help" id="formatHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<p class="helpbox ui-ncbitoggler-slave" id="hlp1">
+These options control formatting of alignments in results pages. The
+default is HTML, but other formats (including plain text) are available.
+PSSM and PssmWithParameters are representations of Position Specific Scoring Matrices and are only available for PSI-BLAST. 
+The Advanced view option allows the database descriptions to be sorted by various indices in a table.
+</p>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>
+
+<tr class="odd paramSet">
+<td class="hd"><label for="ALIGNMENT_VIEW">Alignment View</label></td>
+<td>
+<div class="fi">
+<select name="ALIGNMENT_VIEW" id="ALIGNMENT_VIEW" defVal="Pairwise" class="reset">
+<option value="Pairwise" selected="selected" >Pairwise</option>
+<option value="PairwiseWithIdentities"  >Pairwise with dots for identities</option>
+<option value="QueryAnchored"  >Query-anchored with dots for identities</option>
+<option value="QueryAnchoredNoIdentities"  >Query-anchored with letters for identities</option>
+<option value="FlatQueryAnchored"  >Flat query-anchored with dots for identities</option>
+<option value="FlatQueryAnchoredNoIdentities"  >Flat query-anchored with letters for identities</option>
+
+</select>
+
+
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Alignments view options help" id="alnViewHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<p class="helpbox ui-ncbitoggler-slave" id="hlp2">
+Choose how to view alignments.
+The default "pairwise" view shows how each subject sequence aligns
+individually to the query sequence. The "query-anchored" view shows how
+all subject sequences align to the query sequence. For each view type,
+you can choose to show "identities" (matching residues) as letters or
+dots.
+<a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=BlastHelp#alignment_view" target="helpWin" title="Additional alignments view options help">more...</a>
+</p>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>
+
+<tr class="paramSet">
+<td class="hd"><label>Display</label></td>
+<td class="cb">
+<div class="fi">
+<input name="SHOW_OVERVIEW" id="SHOW_OVERVIEW" type="checkbox" class="cb reset" defVal="checked" checked="checked" />
+<label class="rb" for="SHOW_OVERVIEW">Graphical Overview</label>
+
+<span id="shl" >
+<input name="SHOW_LINKOUT" id="SHOW_LINKOUT" type="checkbox" class="cb reset" defVal="checked" checked="checked" />
+<label class="rb" for="SHOW_LINKOUT">Linkout</label>
+</span>
+<span id="gts" >
+<input name="GET_SEQUENCE" id="GET_SEQUENCE" type="checkbox" class="cb reset" defVal="checked" checked="checked" />
+<label class="rb" for="GET_SEQUENCE">Sequence Retrieval</label>
+</span>
+
+<input name="NCBI_GI" id="NCBI_GI" type="checkbox" class="cb reset " defVal="unchecked" checked="checked" />
+<label class="rb " for="NCBI_GI">NCBI-gi</label>
+<span id="scf" >
+<input name="SHOW_CDS_FEATURE" id="SHOW_CDS_FEATURE" type="checkbox" class="cb reset blastn" defVal="unchecked" false />
+<label for="SHOW_CDS_FEATURE" class="blastn">CDS feature</label>
+</span>
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Alignments display options help" id="displayHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<ul class="helpbox ui-ncbitoggler-slave" id="hlp3">
+<li>Graphical Overview: Graphical Overview: Show graph of similar sequence regions aligned to  query.
+<a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=BlastHelp#show_overview" target="helpWin" title="Graphical Overview help">more...</a>
+</li>
+<li>NCBI-gi: Show NCBI gi identifiers.
+</li>
+<li>CDS feature: Show annotated coding region and translation.
+<a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=BlastHelp#show_cds_feature" title="CDS feature help" target="helpWin" >more...</a>
+</li></ul>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>
+
+
+<tr class="paramSet odd xgl">
+<td class="hd"><label>Masking</label></td>
+<td>
+<div class="fi">
+<label for="MASK_CHAR"> Character: </label>
+<select name="MASK_CHAR" id="MASK_CHAR"  class="reset" defVal="2">
+<option value="0"  >X for protein, n for nucleotide</option>
+<option value="2" selected="selected" >Lower Case</option>
+</select>
+<label for="MASK_COLOR"> Color:</label>
+<select name="MASK_COLOR" id="MASK_COLOR" class="reset" defVal="1">
+<option value="0"  >Black
+</option>
+
+<option value="1" selected="selected" >Grey
+</option>
+
+<option value="2"  >Red
+</option>
+
+</select>
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Alignments masking help" id="maskingHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<ul class="helpbox ui-ncbitoggler-slave" id="hlp4">
+<li>Masking Character: Display masked (filtered) sequence regions as lower-case or as specific letters (N for nucleotide, P for protein).
+</li>
+<li>Masking Color: Display masked sequence regions in the given color.</li>
+</ul>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>
+
+
+<tr id="lr" class="paramSet xgl">
+<td class="hd"><label>Limit results</label></td>
+<td>
+<div class="fi">
+<label for="FRM_DESCRIPTIONS">Descriptions:</label>
+<select name="DESCRIPTIONS" id="FRM_DESCRIPTIONS" class="reset" defVal="100">
+<option value="0"      >0</option>
+<option value="10"     >10</option>
+<option value="50"     >50</option>
+<option value="100"   selected="selected" >100</option>
+<option value="250"    >250</option>
+<option value="500"    >500</option>
+<option value="1000"   >1000</option>
+<option value="5000"   >5000</option>
+<option value="10000"  >10000</option>
+<option value="20000"  >20000</option>
+</select>
+
+<label for="FRM_NUM_OVERVIEW">Graphical overview:</label>
+<select name="NUM_OVERVIEW" id="FRM_NUM_OVERVIEW" class="reset" defVal="100">
+<option value="0"     >0</option>
+<option value="10"    >10</option>
+<option value="50"    >50</option>
+<option value="100"  selected="selected" >100</option>
+<option value="250"   >250</option>
+<option value="500"  >500</option>
+<option value="1000"  >1000</option>
+</select>
+<span id="frmAln">
+<label for="FRM_ALIGNMENTS">Alignments:</label>
+<select name="ALIGNMENTS" id="FRM_ALIGNMENTS" class="reset" defVal="100">
+<option value="0"      >0</option>
+<option value="10"     >10</option>
+<option value="50"    selected="selected" >50</option>
+<option value="100"    >100</option>
+<option value="250"    >250</option>
+<option value="500"    >500</option>
+<option value="1000"   >1000</option>
+<option value="5000"   >5000</option>
+<option value="10000"  >10000</option>
+<option value="20000"  >20000</option>
+</select>
+</span>
+<label for="FRM_LINE_LENGTH">Line length:</label>
+<select name="LINE_LENGTH" id="FRM_LINE_LENGTH" class="reset" defVal="60">
+<option value="60"    selected="selected" >60</option>
+<option value="90"     >90</option>
+<option value="120"     >120</option>
+<option value="150"     >150</option>
+</select>
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Limit number of descriptions/alignments help" id="numHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<ul class="helpbox ui-ncbitoggler-slave" id="hlp5">
+<li>Descriptions: Show short descriptions for up to the given number of  sequences.</li> 
+<li>Alignments:  Show alignments for up to the given number of sequences, in order of statistical significance.</li>
+<li>Line lenghth:  Number of letters to show on one line in an alignment.</li>
+</ul>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>
+
+<tr class="paramSet odd xgl ">
+<td class="hd"></td>
+<td>
+<div class="">
+<label for="qorganism">Organism</label>
+<span class="instr">Type common name, binomial, taxid, or group name. Only 20 top taxa will be shown.</span><br/>
+<input name="FORMAT_ORGANISM" size="55"  type="text" id="qorganism" value="" data-jigconfig="dictionary:'taxids_sg'" autocomplete="off" data-jig="ncbiautocomplete" class="reset">
+<input type="checkbox" name="FORMAT_ORG_EXCLUDE"  class="oExclR cb" id="orgExcl"/>        
+<input type="hidden" value = "1" name="FORMAT_NUM_ORG" id="numOrg" />
+<label for="orgExcl" class="right">exclude</label>
+<a href="#" title="Add organism" id="addOrg"><img border="0" src="css/images/addOrg.jpg" id="addOrgIm"   alt="Add organism"  mouseovImg="css/images/addOrgOver.jpg" mouseoutImg="css/images/addOrg.jpg" mousedownImg="css/images/addOrgDown.jpg" mouseupImg="css/images/addOrgOver.jpg"  /></a>
+<div id="orgs">
+
+</div>
+<div class="fi">
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Limit results by organism help" id="organismHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<p class="helpbox ui-ncbitoggler-slave" id="hlp6">
+Show only sequences from the given organism.
+</p>
+</div><!-- ARIA -->
+</div>
+</div>
+</td>
+</tr>
+
+<tr class="paramSet xgl ">
+<td class="hd"></td>
+<td>
+<div class="fi">
+<label for="FORMAT_EQ_TEXT">Entrez query:</label>
+<input name="FORMAT_EQ_TEXT" id="FORMAT_EQ_TEXT" size="60" type="text" value="" class="reset" />
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Limit results by Entrez query help" id="entrezHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<p class="helpbox ui-ncbitoggler-slave" id="hlp7">
+Show only those sequences that match the given Entrez query.
+<a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=BlastHelp#limit_result" target="helpWin" title="Additional limit results by Entrez query help"  target="helpWin">more...</a>
+</p>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>
+
+  
+<tr class="paramSet odd xgl">
+<td class="hd"></td>
+<td>
+<div class="fi">
+<label for="EXPECT_LOW">Expect Min:</label> <input name="EXPECT_LOW" id="EXPECT_LOW" size="10" type="text" value="" class="reset"/>
+<label for="EXPECT_HIGH">Expect Max:</label> <input name="EXPECT_HIGH" id="EXPECT_HIGH" size="10" type="text" value="" class="reset" />
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Limit results by expect value range help" id="expectHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<p class="helpbox ui-ncbitoggler-slave" id="hlp8">
+Show only sequences with expect values in the given range.
+<a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=BlastHelp#expect_range" target="helpWin" title="Additional limit results by expect value range help">more...</a>
+</p>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>
+<tr class="paramSet xgl">
+<td class="hd"></td>
+<td>
+ <div class="fi">
+<label for="PERC_IDENT_LOW">Percent Identity Min:</label> <input name="PERC_IDENT_LOW" id="PERC_IDENT_LOW" size="10" type="text" value="" class="reset"/>
+<label for="PERC_IDENT_HIGH">Percent Identity Max:</label> <input name="PERC_IDENT_HIGH" id="PERC_IDENT_HIGH" size="10" type="text" value="" class="reset" />
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="Limit results by percent identity range help" id="percIdentHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<p class="helpbox ui-ncbitoggler-slave" id="hlp10">
+ Show only sequences with percent identity values in the given range.  
+</p>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>      
+<tr class="psiBlast odd paramSet xgl ">
+<td class="hd"><label>Format for</label></td>
+<td>
+<div class="fi">
+<input name="RUN_PSIBLAST_FORM" id="RUN_PSIBLAST" type="checkbox" class="cb psiBlast"  />
+<label class="rb psiBlast" for="RUN_PSIBLAST">PSI-BLAST</label>
+<label for="I_THRESH">with inclusion threshold:</label>
+<input name="I_THRESH" id="I_THRESH" size="10" type="text" value="" defVal="0.005" />
+<a class="helplink  ui-ncbitoggler" data-jig="ncbitoggler" title="PSI BLAST formatting help" id="psiHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+<div class="ui-helper-reset" aria-live="assertive" >
+<ul class="helpbox ui-ncbitoggler-slave" id="hlp9">
+<li>Format for PSI-BLAST: The Position-Specific Iterated BLAST (PSI-BLAST) program performs iterative searches with a protein query, 
+in which sequences found in one round of search are used to build a custom score model for the next round.
+<a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=BlastHelp#psiblast" target="helpWin" title="Additional PSI BLAST formatting help">more...</a>
+</li>  
+<li>Inclusion Threshold: This sets the statistical significance threshold for including a sequence in the model used 
+by PSI-BLAST to create the PSSM on the next iteration.</li> 
+</ul>
+</div><!-- ARIA -->
+</div>
+</td>
+</tr>
+</table>
+
+
+<input name="ViewReport" value="ViewReport" type="hidden" />
+<input name="REFORMAT_REPORT" value="shown" type="hidden" />
+<input name="RID" value="574MKTV3015" type="hidden" />
+<input name="CDD_RID" value="" type="hidden" />
+<input name="CDD_SEARCH_STATE" type="hidden" value="" />
+
+<input name="STEP_NUMBER" value="" id="stepNumber" type="hidden" />
+<input name="CMD" value="Get" type="hidden" />
+<input name="FORMAT_EQ_OP" value="AND" type="hidden" />
+<input name="RESULTS_PAGE_TARGET" type="hidden" id="resPageTarget" value="" />
+<!-- <input name="QUERY_INFO" type="hidden" value="" /> -->	
+<!-- <input name="ENTREZ_QUERY" type="hidden" value="" /> -->	
+<input name="QUERY_INDEX" type="hidden" value="0"/>
+<input name="NUM_QUERIES" type="hidden" value="1"/>
+
+<!-- Those params are set in the template (blastn.dat, blastp.dat etc. -->
+<input name="BLAST_PROGRAMS" type="hidden" value="blastn"/>
+<input name="PAGE" type="hidden" value="Nucleotides"/>
+<input name="PROGRAM" type="hidden" value="blastn"/>
+<input name="MEGABLAST" type="hidden" value="" />
+<input name="RUN_PSIBLAST" type="hidden" value="" />
+<input name="BLAST_SPEC" id="blastSpec" type="hidden" value=""/>
+
+
+<input name="QUERY" type="hidden" value="ATGAATGTCCGAACCATAAACTATAAAGATTCTAGTAATAGTCACGAATTTACTCGCTCATTAAGACAAA
+CAGGATTCGGAGTATTAAATAACCATCCAATAGATTTAAATCTTATTTATAATGTATATAATGAATGGGA
+AAAATTTTTCAATGGAAAAGATAAAAATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCT
+CTTGGAACAGAAAATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTATCAATGGG
+GGAGGCTTCCAAATGACTTCAGCAGTAATACCGAAAAACTTTACAAAGAACTTGTTTCCCTTACTTCTAC
+TTTACTTCATTGGATCCAAGATGAAACTCCAGATCATATAAAATCCTCATTCTCCATTCCTCTACCAGAC
+ATGATAATTGACAGCAAAACTCATTTATTAAGAATTATACATTATCCTCCCTTAGATGGTACAGAAGAAC
+CAGAGGCAATTAGAGGTG"/>
+<input name="JOB_TITLE" type="hidden" value="Nucleotide Sequence (508 letters)"/>
+<input name="QUERY_TO" type="hidden" value=""/>
+<input name="QUERY_FROM" type="hidden" value=""/>
+<input name="SUBJECTS_FROM" type="hidden" value=""/>
+<input name="SUBJECTS_TO" type="hidden" value=""/>
+<input name="EQ_TEXT" type="hidden" value=""/>
+<input name="ORGN" type="hidden" value=""/>
+<input name="EQ_MENU" type="hidden" value=""/>
+<input name="ORG_EXCLUDE" type="hidden" value=""/>
+<input name="PHI_PATTERN" type="hidden" value=""/>
+<input name="EXPECT" type="hidden" value="10"/>									
+<input name="DATABASE" type="hidden" value="nr"/>
+<input name="DB_GROUP" type="hidden" value=""/>
+<input name="SUBGROUP_NAME" type="hidden" value=""/>
+
+<input name="GENETIC_CODE" type="hidden" value=""/>
+<input name="WORD_SIZE" type="hidden" value="11"/>
+<input name="MATCH_SCORES" type="hidden" value="2,-3"/>			
+<input name="MATRIX_NAME" type="hidden" value=""/>				
+<input name="GAPCOSTS" type="hidden" value="5 2"/>
+<input name="MAX_NUM_SEQ" id="maxNumSeq" type="hidden" value="100"/>					
+<input name="COMPOSITION_BASED_STATISTICS" type="hidden" value=""/>			
+<input name="NEWWIN" type="hidden" value=""/>
+<input name="SHORT_QUERY_ADJUST" type="hidden" value=""/>
+<input name="FILTER" type="hidden" value="L;"/>
+<input name="REPEATS" type="hidden" value=""/>
+<input name="ID_FOR_PSSM" type="hidden" value=""/>
+<input name="EXCLUDE_MODELS" type="hidden" value=""/>
+<input name="EXCLUDE_SEQ_UNCULT" type="hidden" value=""/>
+<input name="WP_PROTEINS" type="hidden" value=""/>
+<input name="SEQ_FROM_TYPE" type="hidden" value=""/>
+<input name="ENTREZ_QUERY" type="hidden" value=""/>
+<input name="ENTREZ_QUERY_PRESET" type="hidden" value=""/>
+<input name="ENTREZ_QUERY_PRESET_EXCL" type="hidden" value=""/>
+<input name="NUM_ORG" type="hidden" value = "1" />
+
+<!-- PSSM -->
+<input name="LCASE_MASK" type="hidden" value=""/>
+<input name="TEMPLATE_TYPE" type="hidden" value=""/>
+<input name="TEMPLATE_LENGTH" type="hidden" value=""/>
+<input name="I_THRESH" type="hidden" value=""/>
+<input name="PSI_PSEUDOCOUNT" type="hidden" value=""/>
+<input name="DI_THRESH" type="hidden" id="diThresh" value=""/>
+<input name="HSP_RANGE_MAX" type="hidden" value="0"/>
+
+
+
+<input name="ADJUSTED_FOR_SHORT_QUERY" type="hidden" value=""/>
+<input name="MIXED_QUERIES" type="hidden" value=""/>
+<input name="MIXED_DATABASE" id="mixedDb" type="hidden" value=""/>
+<input name="BUILD_NAME"  type="hidden" value=""/>
+<input name="ORG_DBS"  type="hidden" value=""/>
+<input name="WWW_BLAST_TYPE" type="hidden" value="newblast"/>
+
+</form>
+</div> <!-- aria -->
+                <div class="ui-helper-reset" aria-live="assertive" >    
+<form  name="FormatDownload" id="FormatDownload" class="resbox ui-ncbitoggler-slave">
+<table class="options dwnl blastn ">
+<tr><td class="frh" colspan=6><div class="tb">Download</div></td></tr>
+<tr>
+<td id="tdal">
+<div class="dnHeader">Alignment</div>
+<div class="dnLinks">
+<a  href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=Text&FORMAT_OBJECT=Alignment&DESCRIPTIONS=100&ALIGNMENTS=100&CMD=Get">Text</a>
+<a  class="xgl" href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=XML&FORMAT_OBJECT=Alignment&CMD=Get">XML</a>
+<a  href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=ASN.1&FORMAT_OBJECT=Alignment&CMD=Get">ASN.1</a>
+<a  href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=JSONSA&FORMAT_OBJECT=Alignment&CMD=Get">JSON Seq-align</a>
+<a  id="hitText" href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=Text&FORMAT_OBJECT=Alignment&DESCRIPTIONS=100&ALIGNMENT_VIEW=Tabular&CMD=Get">Hit Table(text)</a>
+<a  id="hitCvs" href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=CSV&FORMAT_OBJECT=Alignment&DESCRIPTIONS=100&ALIGNMENT_VIEW=Tabular&CMD=Get">Hit Table(csv)</a>
+<a  class="xgl" href="Blast.cgi?RID=574MKTV3015&FORMAT_TYPE=XML2&FORMAT_OBJECT=Alignment&CMD=Get">Multiple-file XML2</a>
+<a  class="xgl" href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=XML2_S&FORMAT_OBJECT=Alignment&CMD=Get">Single-file XML2</a>
+<a  class="xgl" href="Blast.cgi?RID=574MKTV3015&FORMAT_TYPE=JSON2&FORMAT_OBJECT=Alignment&CMD=Get">Multiple-file JSON</a>
+<a  class="xgl" href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=JSON2_S&FORMAT_OBJECT=Alignment&CMD=Get">Single-file JSON</a>
+<a  class="xgl blastn" href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=SAM_SQ&FORMAT_OBJECT=Alignment&CMD=Get">SAM</a>
+</div>
+</td>
+<td class="dnl xgl">
+<div class="dnHeader">Search Strategies</div>
+<div class="dnLinks">
+<a  href="Blast.cgi?CMD=GetSaved&RECENT_RESULTS=on&RID=574MKTV3015&DOWNLOAD_OPTIONS=true">ASN.1</a>
+</div>
+</td>
+<td class="dnl" id="dnPSSMPar">
+<div class="dnHeader">PSSM to restart search</div>
+<div class="dnLinks">
+<a  href="Blast.cgi?RESULTS_FILE=on&RID=574MKTV3015&FORMAT_TYPE=ASN.1&FORMAT_OBJECT=PSSM_Scoremat&CMD=Get">PSSM</a>
+</div>
+</td>
+<td>
+<a class="helplink ui-ncbitoggler" data-jig="ncbitoggler" title="Download help" data-ncbitoggler-toggles="hlp11" id="dnHelp" href="#"><span class="ui-ncbitoggler-master-text"><span>[?]</span></span>
+<span class="ui-icon ui-icon-triangle-1-e"></span></a>
+</td>
+</tr>
+</table>
+<div class="ui-helper-reset" aria-live="assertive" >
+<div class="helpbox ui-ncbitoggler-slave" id="hlp11">
+  The Download link provides BLAST output that may be used as input to another program.
+  This includes parseable formats such as the tabular report or XML as well as the Search Strategy files read by the BLAST+ applications.
+  More details on the parseable (XML, tabular, and ASN.1) reports can be found at
+  <a href="https://www.ncbi.nlm.nih.gov/books/NBK153387/" target="helpWin" >https://www.ncbi.nlm.nih.gov/books/NBK153387/</a><br/>
+  <br/>
+  <p>
+  The following formats are offered under the Alignment section:<br/>  
+    1). "Text". Non-HTML standard BLAST report.<br/>
+    2). "XML". XML report based upon the DTD at <a href="https://www.ncbi.nlm.nih.gov/data_specs/dtd/NCBI_BlastOutput.dtd" target="helpWin" >https://www.ncbi.nlm.nih.gov/data_specs/dtd/NCBI_BlastOutput.dtd</a><br/>    
+    3). "ASN.1". Alignment written out in Abstract Syntax Notation 1.<br/>
+    4). "JSON Seq-align". Alignment written out in JSON.<br/>
+    4). "Hit Table(text)". The tabular report as text.<br/>
+    5). "Hit Table(csv)". The tabular report ready for import into spread-sheet programs like Excel.<br/>
+    6). "XML2". New XML format described at <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/documents/NEWXML/xml2.pdf" target="helpWin" title="XML for BLAST">ftp://ftp.ncbi.nlm.nih.gov/blast/documents/NEWXML/xml2.pdf</a>.<br/>
+    7). "JSON". New JSON format described at <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/documents/NEWXML/xml2.pdf" target="helpWin" title="XML for BLAST">ftp://ftp.ncbi.nlm.nih.gov/blast/documents/NEWXML/xml2.pdf</a>.<br/>
+    8). "SAM". Sequence Alignment Map format.<br/>
+  </p>
+  <p>
+    XML2 and JSON can be downloaded either as one file per query (multiple-file) or one file for all queries (single-file). These formats are listed as Multiple-file XML2 (and JSON) or Single-file XML (and JSON).
+  </p>
+  <p>  
+    The following report is offered under the Search Strategy section:<br/>  
+    1). "ASN.1" Search Strategy. A record of the parameters, query, and database used in the search. This file can be used to start a stand-alone BLAST search, see
+    <a href="https://www.ncbi.nlm.nih.gov/books/NBK1763/#CmdLineAppsManual.I455_BLAST_search_stra" target="helpWin" >https://www.ncbi.nlm.nih.gov/books/NBK1763/#CmdLineAppsManual.I455_BLAST_search_stra</a>
+  </p>
+</div>    
+</div><!-- ARIA -->
+</form>
+</div> <!-- aria -->                
+                <form action="Blast.cgi" enctype="application/x-www-form-urlencoded" method="POST"  name="overview0" >
+                
+                <input name="CMD" type="hidden" value="">                
+                <p><!--
+QBlastInfoBegin
+	Status=READY
+QBlastInfoEnd
+--><p>
+<PRE>
+BLASTN 2.8.1+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro
+A. Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and
+David J. Lipman (1997), "Gapped BLAST and PSI-BLAST: a new
+generation of protein database search programs", Nucleic
+Acids Res. 25:3389-3402.
+
+
+RID: 574MKTV3015
+
+
+Database: Nucleotide collection (nt)
+           50,392,116 sequences; 197,451,948,575 total letters
+Query= 
+Length=508
+
+
+                                                                   Score     E
+Sequences producing significant alignments:                       (Bits)  Value
+
+gi|1102944678|gb|CP009653.1|  Francisella tularensis subsp. no...  68.0    3e-07
+gi|1098520541|gb|CP016635.1|  Francisella tularensis subsp. no...  68.0    3e-07
+gi|755455694|gb|CP010103.1|  Francisella tularensis subsp. nov...  68.0    3e-07
+gi|754269614|gb|CP009633.1|  Francisella tularensis subsp. nov...  68.0    3e-07
+gi|754267860|gb|CP009607.1|  Francisella tularensis subsp. nov...  68.0    3e-07
+gi|754252161|gb|CP009353.1|  Francisella tularensis subsp. nov...  68.0    3e-07
+gi|328676078|gb|CP002557.1|  Francisella cf. novicida Fx1, com...  68.0    3e-07
+gi|118422521|gb|CP000439.1|  Francisella tularensis subsp. nov...  68.0    3e-07
+gi|1342690891|gb|CP021490.1|  Francisella tularensis subsp. no...  63.5    1e-05
+gi|1102957578|gb|CP009682.1|  Francisella tularensis subsp. no...  63.5    1e-05
+gi|1543017352|gb|CP034660.1|  Colwellia sp. Arc7-635 chromosom...  61.7    5e-05
+gi|1172624823|gb|CP014943.1|  Colwellia sp. PAMC 21821, comple...  59.9    2e-04
+gi|1538928490|gb|CP034466.1|  Francisella tularensis strain FD...  59.0    2e-04
+gi|1538926886|gb|CP034468.1|  Francisella tularensis strain FD...  59.0    2e-04
+gi|1538925310|gb|CP034467.1|  Francisella tularensis strain FD...  59.0    2e-04
+gi|1486372811|gb|CP024807.1|  Francisella tularensis subsp. ho...  59.0    2e-04
+gi|1419283192|gb|CP021781.1|  Francisella sp. FDC440 chromosom...  59.0    2e-04
+gi|1386753712|gb|CP003049.2|  Francisella tularensis subsp. tu...  59.0    2e-04
+gi|1386753711|gb|CP003048.2|  Francisella tularensis subsp. tu...  59.0    2e-04
+gi|1329920953|gb|CP025778.1|  Francisella tularensis strain 12...  59.0    2e-04
+gi|1127804378|gb|CP013853.1|  Francisella tularensis strain Sc...  59.0    2e-04
+gi|941924107|gb|CP012092.1|  Francisella tularensis strain T01...  59.0    2e-04
+gi|916363017|gb|CP012372.1|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|914247887|gb|CP011488.2|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|913035616|gb|CP012037.1|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|822669647|gb|CP009753.1|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|820871666|gb|CP010446.2|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|754282044|gb|CP010290.1|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|754279419|gb|CP010289.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|754277313|gb|CP010288.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|754275258|gb|CP010287.1|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|754273241|gb|CP010115.1|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|754265763|gb|CP009694.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|754257844|gb|CP009693.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|576908597|gb|CP007148.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|421950472|gb|CP003932.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|407293146|gb|CP003862.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|282158286|gb|CP001633.1|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|240248234|emb|AJ749949.2|  Francisella tularensis subsp. tu...  59.0    2e-04
+gi|209729882|tpg|BK006741.1|  TPA: Francisella tularensis subs...  59.0    2e-04
+gi|156251972|gb|CP000803.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|134048946|gb|CP000608.1|  Francisella tularensis subsp. tul...  59.0    2e-04
+gi|115128880|gb|CP000437.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|110319990|emb|AM286280.1|  Francisella tularensis subsp. tu...  59.0    2e-04
+gi|109697898|gb|DQ681457.1|  Synthetic construct Francisella t...  59.0    2e-04
+gi|62259071|gb|AY967064.1|  Synthetic construct isolate FTT015...  59.0    2e-04
+gi|89143280|emb|AM233362.1|  Francisella tularensis subsp. hol...  59.0    2e-04
+gi|1331402674|gb|CP024847.1|  Neisseriaceae bacterium DSM 1009...  58.1    6e-04
+gi|754261989|gb|CP009442.1|  Francisella philomiragia strain O...  55.4    0.002
+gi|754255891|gb|CP009436.1|  Francisella philomiragia strain O...  55.4    0.002
+gi|754253960|gb|CP009343.1|  Francisella philomiragia strain O...  55.4    0.002
+gi|336445622|gb|CP002872.1|  Francisella sp. TX077308, complet...  55.4    0.002
+gi|167596226|gb|CP000937.1|  Francisella philomiragia subsp. p...  55.4    0.002
+gi|187711822|gb|CP000915.1|  Francisella tularensis subsp. med...  54.5    0.007
+gi|1172540267|gb|CP020465.1|  Colwellia beringensis strain NB0...  52.7    0.024
+gi|1468724591|gb|CP031961.1|  Pseudoalteromonas tunicata strai...  51.8    0.024
+gi|1243429708|gb|CP011032.1|  Pseudoalteromonas tunicata strai...  51.8    0.024
+gi|802138589|emb|LO017702.2|  Zebrafish DNA sequence from clon...  51.8    0.024
+gi|21211864|emb|AL606809.8|  Zebrafish DNA sequence from clone...  51.8    0.024
+gi|663680989|emb|HG975517.1|  Solanum lycopersicum chromosome ...  50.9    0.083
+gi|1307445973|gb|CP025164.1|  Candida albicans strain SC5314-P...  50.0    0.083
+gi|1307445965|gb|CP025156.1|  Candida albicans strain SC5314-P...  50.0    0.083
+gi|1305241565|gb|CP025181.1|  Candida albicans strain SC5314-G...  50.0    0.083
+gi|1305241253|gb|CP025173.1|  Candida albicans strain SC5314-G...  50.0    0.083
+gi|1239725810|gb|CP023121.1|  Lupinus angustifolius cultivar T...  50.0    0.083
+gi|1078733103|gb|CP017629.1|  Candida albicans SC5314 chromoso...  50.0    0.083
+gi|76573447|dbj|AP006852.1|  Candida albicans genomic DNA, chr...  50.0    0.083
+gi|1519303320|emb|LR129762.1|  Plasmodium yoelii killicki stra...  49.1    0.29 
+gi|1463778995|gb|CP031611.1|  Campylobacter hepaticus strain H...  49.1    0.29 
+gi|1216921305|gb|CP011036.1|  Pseudoalteromonas nigrifaciens s...  49.1    0.29 
+gi|685049950|emb|LN598462.1|  Cyprinus carpio genome assembly ...  49.1    0.29 
+gi|123674668|emb|AM449787.1|  Vitis vinifera, whole genome sho...  49.1    0.29 
+gi|76873893|emb|CR954246.1|  Pseudoalteromonas haloplanktis st...  49.1    0.29 
+gi|13169570|emb|AL512323.8|  Human DNA sequence from clone RP1...  49.1    0.29 
+gi|1370969124|emb|LT969422.1|  Plasmodium sp. gorilla clade G2...  48.2    0.29 
+gi|1348536331|ref|XM_007109206.2|  PREDICTED: Physeter catodon...  48.2    0.29 
+gi|1348536326|ref|XM_007109205.2|  PREDICTED: Physeter catodon...  48.2    0.29 
+gi|1348536322|ref|XM_007109204.2|  PREDICTED: Physeter catodon...  48.2    0.29 
+gi|1169607782|gb|CP014176.1|  Clostridium argentinense strain ...  48.2    0.29 
+gi|1042907543|emb|LT594794.1|  Theobroma cacao genome assembly...  48.2    0.29 
+gi|164565490|gb|AC216462.1|  Populus trichocarpa clone ACSB124...  48.2    0.29 
+gi|1370978997|emb|LT969450.1|  Plasmodium sp. DRC-Itaito genom...  47.3    1.0  
+gi|1370974023|emb|LT969436.1|  Plasmodium gaboni genome assemb...  47.3    1.0  
+gi|1370533788|gb|CP028109.1|  Fusobacterium nucleatum subsp. n...  47.3    1.0  
+gi|1370531809|gb|CP028101.1|  Fusobacterium nucleatum subsp. n...  47.3    1.0  
+gi|1273855411|gb|CP023758.1|  Solanum lycopersicum cultivar I-...  47.3    1.0  
+gi|1220469784|gb|CP020798.1|  Oryzias latipes strain HNI chrom...  47.3    1.0  
+gi|1213419029|gb|CP022122.1|  Fusobacterium nucleatum subsp. n...  47.3    1.0  
+gi|1102623088|emb|LN835302.1|  Plasmodium relictum strain SGS1...  47.3    1.0  
+gi|1042907541|emb|LT594792.1|  Theobroma cacao genome assembly...  47.3    1.0  
+gi|965610582|dbj|AP015042.1|  Vigna angularis var. angularis D...  47.3    1.0  
+gi|929732263|gb|CP012717.1|  Fusobacterium nucleatum subsp. nu...  47.3    1.0  
+gi|929730248|gb|CP012716.1|  Fusobacterium nucleatum subsp. nu...  47.3    1.0  
+gi|929726296|gb|CP012714.1|  Fusobacterium nucleatum subsp. vi...  47.3    1.0  
+gi|731182409|dbj|AB798838.1|  Uncultured archaeon gene for 16S...  47.3    1.0  
+gi|690020514|emb|LM528044.1|  Strongyloides papillosus genome ...  47.3    1.0  
+gi|690018538|emb|LM525776.1|  Strongyloides papillosus genome ...  47.3    1.0  
+gi|687022652|emb|LM525566.1|  Strongyloides papillosus genome ...  47.3    1.0  
+gi|583841749|gb|CP007065.1|  Fusobacterium nucleatum subsp. vi...  47.3    1.0  
+gi|387530831|gb|AC246869.3|  Solanum lycopersicum strain Heinz...  47.3    1.0  
+
+ALIGNMENTS
+>gi|1102944678|gb|CP009653.1| Francisella tularensis subsp. novicida strain AL97-2214, complete 
+genome
+Length=1916455
+
+ Score = 68.0 bits (74),  Expect = 3e-07
+ Identities = 154/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  1662141  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  1662082
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1662081  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCCGCTGA-  1662023
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1662022  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1661965
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || |||||| | ||||||||||| ||
+Sbjct  1661964  GTTGCTAAAGGTGAAACTGTAAAGGATATTAAACATTTTTATCACTTGTA  1661915
+
+
+>gi|1098520541|gb|CP016635.1| Francisella tularensis subsp. novicida PA10-7858, complete genome
+Length=1978958
+
+ Score = 68.0 bits (74),  Expect = 3e-07
+ Identities = 154/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  1717081  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  1717022
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1717021  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCCGCTGA-  1716963
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1716962  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1716905
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || |||||| | ||||||||||| ||
+Sbjct  1716904  GTTGCTAAAGGTGAAACTGTAAAGGATATTAAACATTTTTATCACTTGTA  1716855
+
+
+>gi|755455694|gb|CP010103.1| Francisella tularensis subsp. novicida strain DPG 3A-IS, complete 
+genome
+Length=2005074
+
+ Score = 68.0 bits (74),  Expect = 3e-07
+ Identities = 154/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  374095  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  374154
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  374155  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCCGCTGA-  374213
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  374214  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  374271
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || |||||| | ||||||||||| ||
+Sbjct  374272  GTTGCTAAAGGTGAAACTGTAAAGGATATTAAACATTTTTATCACTTGTA  374321
+
+
+>gi|754269614|gb|CP009633.1| Francisella tularensis subsp. novicida U112, complete genome
+Length=1910592
+
+ Score = 68.0 bits (74),  Expect = 3e-07
+ Identities = 154/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  474453  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  474512
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  474513  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCCGCTGA-  474571
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  474572  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  474629
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || |||||| | ||||||||||| ||
+Sbjct  474630  GTTGCTAAAGGTGAAACTGTAAAGGATATTAAACATTTTTATCACTTGTA  474679
+
+
+>gi|754267860|gb|CP009607.1| Francisella tularensis subsp. novicida D9876, complete genome
+Length=1870206
+
+ Score = 68.0 bits (74),  Expect = 3e-07
+ Identities = 154/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  1141450  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  1141509
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1141510  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1141568
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1141569  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1141626
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || |||||| | ||||||||||| ||
+Sbjct  1141627  GTTGCTAAAGGTGAAACTGTAAAGGATATTAAACATTTTTATCACTTGTA  1141676
+
+
+>gi|754252161|gb|CP009353.1| Francisella tularensis subsp. novicida F6168, complete genome
+Length=1923262
+
+ Score = 68.0 bits (74),  Expect = 3e-07
+ Identities = 154/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  976141  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  976200
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  976201  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCCGCTGA-  976259
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  976260  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  976317
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || |||||| | ||||||||||| ||
+Sbjct  976318  GTTGCTAAAGGTGAAACTGTAAAGGATATTAAACATTTTTATCACTTGTA  976367
+
+
+>gi|328676078|gb|CP002557.1| Francisella cf. novicida Fx1, complete genome
+Length=1913619
+
+ Score = 68.0 bits (74),  Expect = 3e-07
+ Identities = 154/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  1660715  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  1660656
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1660655  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1660597
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1660596  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1660539
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || |||||| | ||||||||||| ||
+Sbjct  1660538  GTTGCTAAAGGTGAAACTGTAAAGGATATTAAACATTTTTATCACTTGTA  1660489
+
+
+>gi|118422521|gb|CP000439.1| Francisella tularensis subsp. novicida U112, complete genome
+Length=1910031
+
+ Score = 68.0 bits (74),  Expect = 3e-07
+ Identities = 154/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  1655729  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  1655670
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1655669  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCCGCTGA-  1655611
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1655610  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1655553
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || |||||| | ||||||||||| ||
+Sbjct  1655552  GTTGCTAAAGGTGAAACTGTAAAGGATATTAAACATTTTTATCACTTGTA  1655503
+
+
+>gi|1342690891|gb|CP021490.1| Francisella tularensis subsp. novicida strain TCH2015 chromosome, 
+complete genome
+Length=2000087
+
+ Score = 63.5 bits (69),  Expect = 1e-05
+ Identities = 153/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  463745  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  463804
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  463805  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCCGCTGA-  463863
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  463864  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  463921
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  463922  GTTGCTAAAGGTGAAACTGTAAAGGATATCAAACATTTTTATCACTTGTA  463971
+
+
+>gi|1102957578|gb|CP009682.1| Francisella tularensis subsp. novicida strain AZ06-7470, complete 
+genome
+Length=1890780
+
+ Score = 63.5 bits (69),  Expect = 1e-05
+ Identities = 153/230 (67%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  ||||| || ||||  
+Sbjct  1626252  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCATCCTATTGATTGG  1626193
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1626192  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCCGCTGA-  1626134
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1626133  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1626076
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1626075  GTTGCTAAAGGTGAAACTGTAAAGGATATCAAACATTTTTATCACTTGTA  1626026
+
+
+>gi|1543017352|gb|CP034660.1| Colwellia sp. Arc7-635 chromosome, complete genome
+Length=4741350
+
+ Score = 61.7 bits (67),  Expect = 5e-05
+ Identities = 47/56 (84%), Gaps = 0/56 (0%)
+ Strand=Plus/Plus
+
+Query  446      TATTAAGAATTATACATTATCCTCCCTTAGATGGTACAGAAGAACCAGAGGCAATT  501
+                ||||| | ||| ||||||||||||| || |||||||||||||| ||||  || |||
+Sbjct  4243353  TATTACGCATTCTACATTATCCTCCATTTGATGGTACAGAAGAGCCAGGAGCTATT  4243408
+
+
+>gi|1172624823|gb|CP014943.1| Colwellia sp. PAMC 21821, complete genome
+Length=4884300
+
+ Score = 59.9 bits (65),  Expect = 2e-04
+ Identities = 60/73 (82%), Gaps = 4/73 (5%)
+ Strand=Plus/Plus
+
+Query  421      ATGATAATTGACAG-CAAAACTCATTTATTAAGAATTATACATTATCCTCC-CTTAGATG  478
+                ||||| || ||||  | |||| | ||||||||||||| |||||||||| || |||| | |
+Sbjct  1459857  ATGATCATGGACACACCAAACAC-TTTATTAAGAATTTTACATTATCCGCCGCTTA-AAG  1459914
+
+Query  479      GTACAGAAGAACC  491
+                | |||||||||||
+Sbjct  1459915  GGACAGAAGAACC  1459927
+
+
+>gi|1538928490|gb|CP034466.1| Francisella tularensis strain FDAARGOS_599 chromosome, complete 
+genome
+Length=1892855
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1496741  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1496682
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1496681  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1496623
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1496622  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1496565
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1496564  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1496515
+
+
+>gi|1538926886|gb|CP034468.1| Francisella tularensis strain FDAARGOS_595 chromosome, complete 
+genome
+Length=1894185
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1865246  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1865305
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1865306  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1865364
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1865365  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1865422
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1865423  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1865472
+
+
+>gi|1538925310|gb|CP034467.1| Francisella tularensis strain FDAARGOS_598 chromosome, complete 
+genome
+Length=1893614
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1290020  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1290079
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1290080  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1290138
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1290139  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1290196
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1290197  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1290246
+
+
+>gi|1486372811|gb|CP024807.1| Francisella tularensis subsp. holarctica strain Fth-Must chromosome
+Length=1895952
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1665171  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1665112
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1665111  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1665053
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1665052  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1664995
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1664994  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1664945
+
+
+>gi|1419283192|gb|CP021781.1| Francisella sp. FDC440 chromosome, complete genome
+Length=2054094
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 91/129 (71%), Gaps = 6/129 (5%)
+ Strand=Plus/Plus
+
+Query  58      TCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTAAATCTTATT  117
+               ||||||| | |||| || || |  || ||||| |  |||||||| || |  |||||||||
+Sbjct  418335  TCATTAAAAGAAACGGGTTTTGCTGTTTTAAAAACGCATCCAATTGACTGGAATCTTATT  418394
+
+Query  118     TATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAAAATAAGTAT  174
+                | | ||| || || |||||| |  | ||| | ||   |||  ||| | |   ||| |||
+Sbjct  418395  CAAACTGTTTACAAAGAATGGCAGGATTTTCTAAAGTCTGGTGAAGCTGA---TAAATAT  418451
+
+Query  175     CTTTTTGAT  183
+               |||||||||
+Sbjct  418452  CTTTTTGAT  418460
+
+
+>gi|1386753712|gb|CP003049.2| Francisella tularensis subsp. tularensis TI0902 chromosome, complete 
+genome
+Length=1892857
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  171149  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  171208
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  171209  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  171267
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  171268  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  171325
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  171326  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  171375
+
+
+>gi|1386753711|gb|CP003048.2| Francisella tularensis subsp. tularensis TIGB03 chromosome, complete 
+genome
+Length=1968610
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  171150  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  171209
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  171210  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  171268
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  171269  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  171326
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  171327  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  171376
+
+
+>gi|1329920953|gb|CP025778.1| Francisella tularensis strain 12T0050_FLI chromosome, complete 
+genome
+Length=1890738
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1660797  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1660738
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1660737  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1660679
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1660678  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1660621
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1660620  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1660571
+
+
+>gi|1127804378|gb|CP013853.1| Francisella tularensis strain Schu4 F. tul Mut-127 genome
+Length=1877932
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  273285  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  273344
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  273345  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  273403
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  273404  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  273461
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  273462  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  273511
+
+
+>gi|941924107|gb|CP012092.1| Francisella tularensis strain T01 genome
+Length=1899676
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1119564  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1119623
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1119624  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1119682
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1119683  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1119740
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1119741  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1119790
+
+
+>gi|916363017|gb|CP012372.1| Francisella tularensis subsp. tularensis MA00-2987, complete 
+genome
+Length=1892645
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  171099  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  171158
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  171159  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  171217
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  171218  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  171275
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  171276  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  171325
+
+
+>gi|914247887|gb|CP011488.2| Francisella tularensis subsp. holarctica strain OR96-0246, genome
+Length=1894154
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  340247  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  340306
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  340307  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  340365
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  340366  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  340423
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  340424  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  340473
+
+
+>gi|913035616|gb|CP012037.1| Francisella tularensis subsp. tularensis strain WY96, complete 
+genome
+Length=1898140
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1110066  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1110125
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1110126  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1110184
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1110185  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1110242
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1110243  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1110292
+
+
+>gi|822669647|gb|CP009753.1| Francisella tularensis subsp. tularensis WY-00W4114, complete 
+genome
+Length=1899252
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  255692  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  255751
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  255752  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  255810
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  255811  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  255868
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  255869  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  255918
+
+
+>gi|820871666|gb|CP010446.2| Francisella tularensis subsp. tularensis str. SCHU S4 substr. 
+NR-28534, complete genome
+Length=1878026
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  171005  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  171064
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  171065  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  171123
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  171124  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  171181
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  171182  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  171231
+
+
+>gi|754282044|gb|CP010290.1| Francisella tularensis subsp. tularensis SCHU S4, complete genome
+Length=1892789
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  643876  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  643817
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  643816  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  643758
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  643757  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  643700
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  643699  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  643650
+
+
+>gi|754279419|gb|CP010289.1| Francisella tularensis subsp. holarctica strain 425, complete 
+genome
+Length=1894186
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1652550  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1652491
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1652490  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1652432
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1652431  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1652374
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1652373  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1652324
+
+
+>gi|754277313|gb|CP010288.1| Francisella tularensis subsp. holarctica strain VT68, complete 
+genome
+Length=1893733
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1888051  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1887992
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1887991  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1887933
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1887932  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1887875
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1887874  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1887825
+
+
+>gi|754275258|gb|CP010287.1| Francisella tularensis subsp. tularensis strain Scherm genome
+Length=1891022
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1784976  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1785035
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1785036  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1785094
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1785095  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1785152
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1785153  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1785202
+
+
+>gi|754273241|gb|CP010115.1| Francisella tularensis subsp. tularensis strain NIH B-38, complete 
+genome
+Length=1862444
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  574458  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  574517
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  574518  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  574576
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  574577  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  574634
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  574635  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  574684
+
+
+>gi|754265763|gb|CP009694.1| Francisella tularensis subsp. holarctica LVS, complete genome
+Length=1892177
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  493671  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  493612
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  493611  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  493553
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  493552  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  493495
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  493494  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  493445
+
+
+>gi|754257844|gb|CP009693.1| Francisella tularensis subsp. holarctica strain FTT_1, complete 
+genome
+Length=1892782
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  895805  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  895864
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  895865  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  895923
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  895924  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  895981
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  895982  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  896031
+
+
+>gi|576908597|gb|CP007148.1| Francisella tularensis subsp. holarctica PHIT-FT049, complete 
+genome
+Length=1881193
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1655452  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1655393
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1655392  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1655334
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1655333  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1655276
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1655275  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1655226
+
+
+>gi|421950472|gb|CP003932.1| Francisella tularensis subsp. holarctica F92, complete genome
+Length=1886888
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1656968  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1656909
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1656908  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1656850
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1656849  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1656792
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1656791  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1656742
+
+
+>gi|407293146|gb|CP003862.1| Francisella tularensis subsp. holarctica FSC200, complete genome
+Length=1894157
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1663268  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1663209
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1663208  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1663150
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1663149  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1663092
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1663091  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1663042
+
+
+>gi|282158286|gb|CP001633.1| Francisella tularensis subsp. tularensis NE061598, complete genome
+Length=1892681
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  171228  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  171287
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  171288  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  171346
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  171347  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  171404
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  171405  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  171454
+
+
+>gi|240248234|emb|AJ749949.2| Francisella tularensis subsp. tularensis SCHU S4 complete genome
+Length=1892775
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  171132  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  171191
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  171192  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  171250
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  171251  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  171308
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  171309  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  171358
+
+
+>gi|209729882|tpg|BK006741.1| TPA_asm: Francisella tularensis subsp. holarctica OSU18, complete 
+genome
+Length=1895727
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1664714  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1664655
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1664654  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1664596
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1664595  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1664538
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1664537  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1664488
+
+
+>gi|156251972|gb|CP000803.1| Francisella tularensis subsp. holarctica FTNF002-00, complete 
+genome
+Length=1890909
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1660965  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1660906
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1660905  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1660847
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1660846  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1660789
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1660788  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1660739
+
+
+>gi|134048946|gb|CP000608.1| Francisella tularensis subsp. tularensis WY96-3418, complete 
+genome
+Length=1898476
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  255583  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  255642
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  255643  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  255701
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  255702  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  255759
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  255760  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  255809
+
+
+>gi|115128880|gb|CP000437.1| Francisella tularensis subsp. holarctica OSU18, complete genome
+Length=1895727
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1664714  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1664655
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1664654  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1664596
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1664595  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1664538
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1664537  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1664488
+
+
+>gi|110319990|emb|AM286280.1| Francisella tularensis subsp. tularensis strain FSC 198 complete 
+genome
+Length=1892616
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49      TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+               |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  171148  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  171207
+
+Query  109     AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+               ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  171208  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  171266
+
+Query  166     AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                 ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  171267  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  171324
+
+Query  223     AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                 ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  171325  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  171374
+
+
+>gi|109697898|gb|DQ681457.1| Synthetic construct Francisella tularensis clone FLH204890.01X 
+FTT0155 gene, complete sequence
+Length=852
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49   TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+            |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  55   TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  114
+
+Query  109  AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+            ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  115  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  173
+
+Query  166  AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+              ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  174  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  231
+
+Query  223  AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+              ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  232  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  281
+
+
+>gi|62259071|gb|AY967064.1| Synthetic construct isolate FTT0155 unknown protein gene, complete 
+cds
+Length=957
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Plus
+
+Query  49   TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+            |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  133  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  192
+
+Query  109  AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+            ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  193  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  251
+
+Query  166  AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+              ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  252  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  309
+
+Query  223  AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+              ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  310  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  359
+
+
+>gi|89143280|emb|AM233362.1| Francisella tularensis subsp. holarctica LVS complete genome
+Length=1895994
+
+ Score = 59.0 bits (64),  Expect = 2e-04
+ Identities = 152/230 (66%), Gaps = 9/230 (4%)
+ Strand=Plus/Minus
+
+Query  49       TTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTA  108
+                |||||| | ||||||| | |||| || || | |||| | |  |  || || || ||||  
+Sbjct  1665199  TTTACTAGATCATTAAAAGAAACTGGTTTTGCAGTACTTAGAACTCACCCTATTGATTGG  1665140
+
+Query  109      AATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAA---TGGAAAAGATAAA  165
+                ||  | ||| | |  || ||||| || ||| || | || || ||   |||    | | | 
+Sbjct  1665139  AACTTGATTCAAACGGTTTATAAAGAGTGGCAAGAGTTCTTGAAATCTGGTGCTGCTGA-  1665081
+
+Query  166      AATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCTCT---TGGAACAGAA  222
+                  ||||||| | ||||||  || | | || || || | ||| ||| |   ||   |||||
+Sbjct  1665080  --TAAGTATATCTTTGATGTTGAAAATCAAGATGGTTATTTTCCTATAGATGTCTCAGAA  1665023
+
+Query  223      AATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTA  272
+                  ||||||||||| | || | |  || || ||| | ||||||||||| ||
+Sbjct  1665022  GTTGCTAAAGGTGAAACTGTAAAAGATATCAAACATTTTTATCACTTGTA  1664973
+
+
+>gi|1331402674|gb|CP024847.1| Neisseriaceae bacterium DSM 100970 chromosome, complete genome
+Length=2820660
+
+ Score = 58.1 bits (63),  Expect = 6e-04
+ Identities = 163/242 (67%), Gaps = 9/242 (4%)
+ Strand=Plus/Minus
+
+Query  46      GAATTTACTCGCTCATTAAGACAAACAGGATTCGGAGTATTAAATAACCATCCAATAGA-  104
+               |||||| ||   ||| ||| | |||| ||||| | |||| | || |||||||||||||| 
+Sbjct  900123  GAATTTGCTAAATCACTAAAAGAAACTGGATTTGCAGTAATTAAGAACCATCCAATAGAC  900064
+
+Query  105     TTTAAATCTTATTTATAATGTATATAATGAATGGGAAAAATTTTTCAATGGAAAAGATAA  164
+                 | ||| | ||     |||| |  ||||| ||| || | ||||||    |  |  ||||
+Sbjct  900063  ACTCAAT-TAATGGCGGATGTTTTCAATGAGTGGAAAGAGTTTTTCGCCAGTGACTATAA  900005
+
+Query  165     AAATAAGTATCTTTTTGATTCTG-TACAGCAGGACGGCTTTTTCCCTCT---TGGAACAG  220
+                |  || ||| ||| | |   || |||| ||||| || || || ||  |   || | |||
+Sbjct  900004  GATGAATTATGTTTATAAAAATGATACA-CAGGATGGTTTATTTCCAATGAATGTATCAG  899946
+
+Query  221     AAAATGCTAAAGG-TGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTATCAATGG  279
+               | || ||   ||| |  |||  |||  ||||||||||||||||||||||  |||   |||
+Sbjct  899945  AGAAAGCCGTAGGTTATAGC-GTTAAAGACATTAAAGAATTTTATCACTATTATACGTGG  899887
+
+Query  280     GG  281
+               ||
+Sbjct  899886  GG  899885
+
+
+>gi|754261989|gb|CP009442.1| Francisella philomiragia strain O#319-036 [FSC 153], complete 
+genome
+Length=1919185
+
+ Score = 55.4 bits (60),  Expect = 0.002
+ Identities = 63/85 (74%), Gaps = 0/85 (0%)
+ Strand=Plus/Minus
+
+Query  68       AAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTAAATCTTATTTATAATGTAT  127
+                |||| || || |  || ||||| |  ||||| || || |  ||||||||  | | |||||
+Sbjct  1153840  AAACTGGTTTTGCGGTTTTAAAGACTCATCCTATTGACTGGAATCTTATCCAAACTGTAT  1153781
+
+Query  128      ATAATGAATGGGAAAAATTTTTCAA  152
+                ||||||||||| || | ||||| ||
+Sbjct  1153780  ATAATGAATGGCAAGATTTTTTAAA  1153756
+
+
+>gi|754255891|gb|CP009436.1| Francisella philomiragia strain O#319-067, complete genome
+Length=2045775
+
+ Score = 55.4 bits (60),  Expect = 0.002
+ Identities = 63/85 (74%), Gaps = 0/85 (0%)
+ Strand=Plus/Minus
+
+Query  68      AAACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTAAATCTTATTTATAATGTAT  127
+               |||| || || |  || ||||| |  ||||| || || |  ||||||||  | | |||||
+Sbjct  277601  AAACTGGTTTTGCGGTTTTAAAGACTCATCCTATTGACTGGAATCTTATCCAAACTGTAT  277542
+
+Query  128     ATAATGAATGGGAAAAATTTTTCAA  152
+               ||||||||||| || | ||||| ||
+Sbjct  277541  ATAATGAATGGCAAGATTTTTTAAA  277517
+
+
+  Database: Nucleotide collection (nt)
+    Posted date:  Jan 28, 2019  6:45 AM
+  Number of letters in database: 197,451,948,575
+  Number of sequences in database:  50,392,116
+
+Lambda      K        H
+   0.634    0.408    0.912 
+Gapped
+Lambda      K        H
+   0.625    0.410    0.780 
+Matrix: blastn matrix:2 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 50392116
+Number of Hits to DB: 8091871
+Number of extensions: 15919
+Number of successful extensions: 15919
+Number of sequences better than 10: 0
+Number of HSP's better than 10 without gapping: 0
+Number of HSP's gapped: 15919
+Number of HSP's successfully gapped: 0
+Length of query: 508
+Length of database: 197451948575
+Length adjustment: 38
+Effective length of query: 470
+Effective length of database: 195537048167
+Effective search space: 91902412638490
+Effective search space used: 91902412638490
+A: 0
+X1: 22 (20.1 bits)
+X2: 33 (29.8 bits)
+X3: 110 (99.2 bits)
+S1: 28 (26.5 bits)
+S2: 47 (43.7 bits)
+
+
+                </form>
+				</div><!-- /#content -->
+				<form action="Blast.cgi" enctype="application/x-www-form-urlencoded"  method="post" name="reformat" id="reformat">				
+				   <input name="QUERY_INFO" type="hidden" value="" />    				
+				   <input name="ENTREZ_QUERY" type="hidden" value="" />
+                   <input name="CDD_RID" type="hidden" value="" />
+                   <input name="CDD_SEARCH_STATE" type="hidden" value="" />
+                   <input name="RID" type="hidden" value="574MKTV3015" />
+				   <input name="STEP_NUMBER" type="hidden" value="" />
+				   <input name="CMD" type="hidden" value="Web"/>				
+				   <input NAME="PAGE_TYPE" type="hidden"  value="BlastFormatting"/>
+				
+				   <!-- TO DO: test all of those changes -->				   	
+				   <!-- Psi blast params  PSI_BLAST_PARAMS - commented- using forms[0] from fromatter> -->
+				   <!-- Current Formatting options FORMATTING_OPTIONS- commented- using forms[0] from fromatter> -->
+				   <!-- Current Search options CURR_SAVED_OPTIONS - commented- using forms[0] from fromatter> -->
+                 </form>
+
+                 <form action="Blast.cgi" enctype="application/x-www-form-urlencoded"  method="post" name="setSavedOptions" id="setSavedOptions">					
+					<input name="PAGE_TYPE" type="hidden" value="BlastSearch" />
+					<input name="VIEW_SEARCH" type="hidden" value="true"/>
+					<input name="CMD" type="hidden" value="Web" />					
+					<!-- Current Search options CURR_SAVED_OPTIONS - commented- using forms[0] from fromatter> -->
+				</form>
+				
+				<form action="Blast.cgi" enctype="application/x-www-form-urlencoded"  method="post" name="saveOptions" id="saveOptions">					
+					<input name="SAVE" type="hidden" value="true"/>					
+					<input name="CMD" type="hidden" value="GetSaved" />
+					<!-- Current Search options CURR_SAVED_OPTIONS - commented- using forms[0] from formatter> -->
+				</form>
+        </div><!-- /#content-wrap -->
+
+		  <footer id="page_footer">
+    <div class="foot_wrap">
+      <div class="left col two_col">
+        BLAST is a registered trademark of the National Library of Medicine
+      </div>
+      <div class="right">
+        <a class="help_desk" data-jig="ncbihelpwindow" target="_blank" href="https://support.nlm.nih.gov/knowledgebase/category/?id=CAT-01239"
+          Ncbi_App=blast&amp;Page=oldblastresults&Time=2019-01-31T19:28:15&amp;Host=blast349&amp;ncbi_phid=55BA20C9C53929F10000000000000001&amp;ncbi_session=55BA20C9C53929F1_0000SID&amp;from=https%3A%2F%2Fblast%2Encbi%2Enlm%2Enih%2Egov%2FBlast%2Ecgi%3FALIGNMENTS%3D50%26ALIGNMENT%5FVIEW%3DPairwise%26ALIGNMENT%5FVIEW%3DPairwise%26BLAST%5FPROGRAMS%3Dblastn%26CMD%3DGet%26DATABASE%3Dnr%26DESCRIPTIONS%3D100%26DYNAMIC%5FFORMAT%3Doff%26ENTREZ%5FQUERY%3D%26EXPECT%3D10%26FILTER%3DL%26FORMAT%5FOBJECT%3DAlignment%26FORMAT%5FTYPE%3Dtext%26FORMAT%5FTYPE%3DHTML%26GAPCOSTS%3D5%2B2%26GET%5FSEQUENCE%3Dtrue%26HSP%5FRANGE%5FMAX%3D0%26JOB%5FTITLE%3DNucleotide%2BSequence%2B%28508%2Bletters%29%26LINE%5FLENGTH%3D60%26MASK%5FCHAR%3D2%26MASK%5FCOLOR%3D1%26MATCH%5FSCORES%3D2%2C%2D3%26MAX%5FNUM%5FSEQ%3D100%26MYNCBI%5FUSER%3D10620995123%26MYNCBI%5FUSER%3D10620995123%26MYNCBI%5FUSER%3D10620995053%26NCBI%5FGI%3Don%26NCBI%5FGI%3Dfalse%26NEW%5FFORMATTER%3Don%26NEW%5FVIEW%3Dfalse%26NUM%5FOVERVIEW%3D100%26OLD%5FVIEW%3Dfalse%26PAGE%3DNucleotides%26PHI%5FPATTERN%3D%26PROGRAM%3Dblastn%26QUERY%3DATGAATGTCCGAACCATAAACTATAAAGATTCTAGTAATAGTCACGAATTTACTCGCTCATTAAGACAAA%250ACAGGATTCGGAGTATTAAATAACCATCCAATAGATTTAAATCTTATTTATAATGTATATAATGAATGGGA%250AAAAATTTTTCAATGGAAAAGATAAAAATAAGTATCTTTTTGATTCTGTACAGCAGGACGGCTTTTTCCCT%250ACTTGGAACAGAAAATGCTAAAGGTGCAGCTATTAGTGACATTAAAGAATTTTATCACTTCTATCAATGGG%250AGGAGGCTTCCAAATGACTTCAGCAGTAATACCGAAAAACTTTACAAAGAACTTGTTTCCCTTACTTCTAC%250ATTTACTTCATTGGATCCAAGATGAAACTCCAGATCATATAAAATCCTCATTCTCCATTCCTCTACCAGAC%250AATGATAATTGACAGCAAAACTCATTTATTAAGAATTATACATTATCCTCCCTTAGATGGTACAGAAGAAC%250ACAGAGGCAATTAGAGGTG%250A%26RID%3D574MKTV3015%26SHOW%5FCDS%5FFEATURE%3Dfalse%26SHOW%5FLINKOUT%3Dtrue%26SHOW%5FOVERVIEW%3Dtrue%26USER%5FTYPE%3D2%26USER%5FTYPE%3D2%26WORD%5FSIZE%3D11%26WWW%5FBLAST%5FTYPE%3Dnewblast" id="page_footer_59"> Support center
+        </a>
+        <a href="Blast.cgi?CMD=Web&amp;PAGE_TYPE=BlastDocs&amp;DOC_TYPE=MailList">Mailing list</a>
+        <a href="https://www.youtube.com/playlist?list=PLH-TjWpFfWrtjzMCIvUe-YbrlIeFQlKMq" target="_blank" id="page_footer_54">
+          <img class="icon-medium gray-medium" src="images/youtube.svg" alt="">
+            <span class="icon-fallback-text">YouTube</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- bottom section of footer -->
+    <div class="col" id="contentinfo">
+      <ul class="right inline_list logos">
+        <li>
+          <a href="https://www.nlm.nih.gov" id="page_footer_60">
+            <img class="gray-medium" src="images/nlm-logo.svg" alt="">
+              <span class="icon-fallback-text">National Library Of Medicine</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nih.gov" id="page_footer_61">
+            <img class="gray-medium" src="images/nih-logo.svg" alt="">
+              <span class="icon-fallback-text">National Institutes Of Health</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hhs.gov" id="page_footer_62">
+            <img class="gray-medium" src="images/hhs-logo.svg" alt="">
+              <span class="icon-fallback-text">U.S. Department of Health &amp; Human Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.usa.gov" id="page_footer_63">
+            <img class="icon-large-wide gray-medium" src="images/usagov-logo.svg" alt="">
+              <span class="icon-fallback-text">USA.gov</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer_padding">
+
+        <div class="footer_border h-card">
+
+          <a href="https://www.ncbi.nlm.nih.gov/" class="u-url" id="page_footer_64">
+            <h3 role="heading" aria-level="3" class="ncbi_blue p-org">NCBI</h3>
+          </a>
+
+          <address>
+
+            <a href="https://www.ncbi.nlm.nih.gov/" class="u-url p-org" id="page_footer_65">National Center for Biotechnology Information,</a>
+            <a href="https://www.nlm.nih.gov/" id="page_footer_66"> U.S. National Library of Medicine</a>
+
+            <span class="h-adr">
+              <span class="p-street-address">8600 Rockville Pike</span>,
+              <span class="p-locality">Bethesda</span>
+              <span class="p-region"> MD</span>,
+              <span class="p-postal-code">20894</span>
+              <span class="p-country-name">USA</span>
+            </span>
+
+          </address>
+
+        </div>
+        <div class="inline_list about_list">
+          <a href="https://www.ncbi.nlm.nih.gov/home/about/policies.shtml" id="page_footer_67">Policies and Guidelines</a>
+          |
+          <a href="https://www.ncbi.nlm.nih.gov/home/about/contact.shtml" id="page_footer_68">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/header.js"> </script>
+   </div><!--/#wrap-->
+
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/toggle.js"></script>
+<script type="text/javascript" src="js/remote_data_provider.js"></script>
+<script type="text/javascript" src="js/results.js"></script>
+
+<script type="text/javascript" src="js/blast.js"></script>
+<script type="text/javascript" src="js/format.js"></script>
+   
+<script type="text/javascript" src="/portal/portal3rc.fcgi/rlib/js/InstrumentOmnitureBaseJS/InstrumentNCBIBaseJS/InstrumentPageStarterJS.js"></script>
+<!--
+<script type="text/javascript" src="://www.ncbi.nlm.nih.gov/portal/portal3rc.fcgi/supportedbrowsers/js/nonportalbc_min.js"></script>
+<script type="text/javascript">$("#browsers_ajax").browserCheck();</script>
+-->
+</body>
+</html>
+

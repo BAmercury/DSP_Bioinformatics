@@ -59,18 +59,10 @@ end
 % Piece the results from 4 workers together.  
 ordered_data = []; % Use struct for ordered data
 for i=1:worker_num
-    ordered_data = [ordered_data, stft_position(i)];
-end
+    ordered_data = [ordered_data, stft_position(i)]
 toc
-%%
-% Plot results for comparision
-ordered_data = cell2mat(ordered_data); % Convert to struct
-figure(2)
-plot(ordered_data)
-
-
 % check difference:
-diff = sum(abs(ordered_data - Threebaseperiodicity_vs_position_old));
+diff = sum(abs(Threebaseperiodicity_vs_position_new - Threebaseperiodicity_vs_position_old));
 disp('Absolute Sum Error:')
 disp(diff)
 

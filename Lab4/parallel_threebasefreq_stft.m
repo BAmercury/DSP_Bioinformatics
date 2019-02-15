@@ -1,21 +1,35 @@
-function Threebaseperiodicity_vs_position = parallel_threebasefreq_stft (DNA_SEQUENCE, WINDOW_LENGTH, NFFT)
-DNA_len = length(DNA_SEQUENCE);
-Threebaseperiodicity_vs_position=zeros(1,DNA_len-WINDOW_LENGTH+1);
-coding = DNA_SEQUENCE; 
-coding_A = (upper(coding)=='A'); % find A bases and set them to 1
-coding_T = (upper(coding)=='T'); % find T bases and set them to 1
-coding_G = (upper(coding)=='G'); % find G bases and set them to 1
-coding_C = (upper(coding)=='C'); % find C bases and set them to 1
-worker_num = 2;
-parpool(worker_num);
-tic
-parfor i = 1:DNA_len-WINDOW_LENGTH+1
-    stc_A = coding_A(i:i+WINDOW_LENGTH-1);
-    stc_T = coding_T(i:i+WINDOW_LENGTH-1);
-    stc_G = coding_G(i:i+WINDOW_LENGTH-1);
-    stc_C = coding_C(i:i+WINDOW_LENGTH-1);
-    STFT = abs(fft(stc_A,NFFT)).^2+abs(fft(stc_T,NFFT)).^2 ...
-    +abs(fft(stc_G,NFFT)).^2+abs(fft(stc_C,NFFT)).^2; % FFT of the sequence
-    Threebaseperiodicity_vs_position(i)=STFT(floor(NFFT/3));
+function Threebaseperiodicity_vs_position = parallel_threebasefreq_stft (DNA_SEQUENCE, WINDOW_LENGTH, NFFT, division, index)
+
+%%
+% Function Goals:
+% Divide DNA into a sequence of parts. For each parallelized iteration, the
+% function needs to know which part is which and figure out which
+% subsequence it will need to extract (start and end indices). Make sure
+% all possible window positions are covered by the subsequence
+
+
+%%
+% Calculate the amount of chunks desired (Depends on number of available
+% workers)
+chunks_size = floor(length(DNA_SEQUENCE)/division); %Floor used to round down number
+
+
+%%
+% Determine start point based on index
+start_point = (chunks_size+1) * (index-1);
+
+%%
+% If the index is the last segment of DNA, otherwise seg the end point with
+% respect to the index and desired chunk size
+if index == division
+    end_point = length(DNA_SEQUENCE);
+else
+    end_point = index*chunks_size+WINDOW_LENGTH-1;
 end
-toc
+%%
+% Extract desired DNA sequence now
+seq_div = DNA_SEQUENCE(start_point:end_point
+% Run the individual segment through threebasefreq_stft and return results
+Threebaseperiodicity_vs_position = threebasefreq_stft (seq_div, WINDOW_LENGTH, NFFT);
+
+

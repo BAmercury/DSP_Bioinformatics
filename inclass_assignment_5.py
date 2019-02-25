@@ -55,23 +55,34 @@ TTT: 64
 def freq_decomposer(DNA_Sequence):
     WINDOW_SIZE = 3 # For 3-mers
     rolling_index = [] # Don't use dictionary as MATLAB users will have have access to one
-    rolling_keys = []
-    rolling_counts = []
-    for i in range(len(DNA_Sequence)- WINDOW_SIZE+1):
-        subset = DNA_Sequence[i:(i+WINDOW_SIZE)]
+    rolling_keys = [] # List of rolling names of the 3-mers used for displaying the answer
+    rolling_counts = [] # List of frequency of the 3-mer within the sequence
+    for i in range(len(DNA_Sequence)- WINDOW_SIZE+1): # Sliding window
+        subset = DNA_Sequence[i:(i+WINDOW_SIZE)] # Extract the subset from the DNA sequence
         if subset not in rolling_keys: # Used for displaying the answer later
             rolling_keys.append(subset)
 
-        index = hash(subset)
-        if index not in rolling_index:
+        index = hash(subset) # Build a hash character from the subset
+        if index not in rolling_index: # If the hash character is not in the rolling list of characters add it and increment its corresponding count by 1
             rolling_index.append(index)
             rolling_counts.append(1)
         else:
-            # if the index is in the rolling list increment by 1
+            # if the hash character is already in the rolling list increment by the count by 1
             location = rolling_index.index(index) # Find the location of the index's count
             rolling_counts[location] = rolling_counts[location] + 1
-    test = zip(rolling_keys, rolling_counts)
-    return test
+    freq = zip(rolling_keys, rolling_counts) # Zip together the names and count for final display
+    return freq
 
-test = freq_decomposer('ATTATTGC')
-print(test)
+
+# Test Case 1
+freq = freq_decomposer('ATTATTGC')
+print(freq)
+""" OUTPUT
+[('ATT', 2), ('TTA', 1), ('TAT', 1), ('TTG', 1), ('TGC', 1)]
+"""
+# Test Case 2:
+freq = freq_decomposer('GTTAATTAG')
+print(freq)
+""" OUTPUT
+[('GTT', 1), ('TTA', 2), ('TAA', 1), ('AAT', 1), ('ATT', 1), ('TAG', 1)]
+"""

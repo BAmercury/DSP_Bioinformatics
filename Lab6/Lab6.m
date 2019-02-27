@@ -3,25 +3,17 @@
 %% Lab 6.1.1
 
 %% 
-%Import data and clean
-
+%Import data
 [headers, seq] = fastaread('data.fasta');
-
-
 %%
-% Find Rseq, plot it vs l (assuming e(n) = 0).
-% Also make a bxl table of the base information:
-% h per l position, Remember h=p(b,l)*Rseq(l)
-
-% H(l) = -p(A, l)*log(P(A, l))-p(T, l)*log(P(T, l))-p(G, l)*log(P(G, l))-p(C, l)*log(P(C, l))
-
-
+% Calculate Entropy and then Rseq. Calculate height for b x l table and
+% then plot Rseq vs position (Assume e(n) = 0)
 
 H = [];
 R = [];
 % find how many positions are in the sequence
 temp = seq(1);
-positions = length(temp{1});
+positions = length(temp{1}); % This assumes all sequences given are the same length
 no_of_sequences = length(seq);
 p_a = 0; p_t =0; p_g=0; p_c=0;
 
@@ -52,6 +44,11 @@ for i=1:positions
     H_pos = -p_a*log2(p_a) - p_t*log2(p_t) - p_g*log2(p_g) - p_c*log2(p_c);
     H = [H, H_pos];
     R = [R, 2-H_pos];
+    height_table(1,i) = p_a*(2-H_pos); % A
+    height_table(2,i) = p_c*(2-H_pos); % C
+    height_table(3,i) = p_g*(2-H_pos); % G
+    height_table(4,i) = p_t*(2-H_pos); % T
+    
 end
 
 % Plot

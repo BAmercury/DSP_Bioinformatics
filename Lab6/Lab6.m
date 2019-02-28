@@ -21,6 +21,7 @@ p_a = 0; p_t =0; p_g=0; p_c=0;
 % Make a bxl table
 height_table = eye(4,20);
 for i=1:positions % For each position of the sequence
+    p_a = 0; p_t =0; p_g=0; p_c=0;
     for j=1:no_of_sequences % For each sequence within the array of sequences
         temp = seq(j);
         seq_at_pos = upper(temp{1}(i)); % Pull out the char in the position
@@ -37,6 +38,20 @@ for i=1:positions % For each position of the sequence
 
     end
     % Calculate the probability of each NT
+    if (p_a == 0)
+        p_a = 1;
+    end
+    if (p_g == 0)
+         p_g = 1;
+    end
+    if (p_t == 0)
+        p_t = 1;
+    end
+    if (p_c == 0)
+        p_c =1;
+    end
+    
+            
     p_a = p_a/positions;
     p_g = p_g/positions;
     p_c = p_c/positions;

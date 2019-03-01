@@ -1,14 +1,4 @@
 
-
-def ham_dist(s1, s2):
-
-    # Check if the length of each sequence does not match:
-    if (len(s1) != len(s2)):
-        return "ERROR"
-    else:
-        if () # Finish later
-
-
 def hamming_distance(s1, s2):
     """Return the Hamming distance between equal-length sequences"""
     if len(s1) != len(s2):
@@ -36,7 +26,7 @@ out = hamming_distance(X,Z)
 print(out)
 
 print("Distance between X and W")
-out = hamming_distance(X,Z)
+out = hamming_distance(X,W)
 print(out)
 
 print("Distance between Y and Z")

@@ -1,0 +1,189 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>ECES T580 Lab 7</title><meta name="generator" content="MATLAB 9.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-03-08"><meta name="DC.source" content="Lab7.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>ECES T580 Lab 7</h1><!--introduction--><p>Bhautik (Brian) Amin</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Lab 7.1.1</a></li><li><a href="#7">Lab 7.2.1</a></li></ul></div><h2 id="1">Lab 7.1.1</h2><p>Grab sequence data (Only the sequence)</p><pre class="codeinput">seq = getgenbank(<span class="string">'NC_001416'</span>, <span class="string">'SequenceOnly'</span>,true);
+</pre><p>Total length of the sequence</p><pre class="codeinput">l = length(seq)
+</pre><pre class="codeoutput">
+l =
+
+       48502
+
+</pre><p>Measure the local base compositon by Using a sliding window of variable size Plot the density of nucleotides using window size of 2000bp, 3000bp, and 4000bp</p><p>2000 bp:</p><pre class="codeinput">figure(1)
+ntdensity(seq, <span class="string">'Window'</span>,2000)
+title({<span class="string">'Window Size'</span>, <span class="string">'2000'</span>})
+</pre><img vspace="5" hspace="5" src="Lab7_01.png" alt=""> <p>3000 bp:</p><pre class="codeinput">figure(2)
+ntdensity(seq, <span class="string">'Window'</span>,3000)
+title({<span class="string">'Window Size'</span>, <span class="string">'3000'</span>})
+</pre><img vspace="5" hspace="5" src="Lab7_02.png" alt=""> <p>4000 bp:</p><pre class="codeinput">figure(3)
+ntdensity(seq, <span class="string">'Window'</span>,4000)
+title({<span class="string">'Window Size'</span>, <span class="string">'4000'</span>})
+</pre><img vspace="5" hspace="5" src="Lab7_03.png" alt=""> <h2 id="7">Lab 7.2.1</h2><pre class="codeinput"><span class="comment">% Generate random transition and emisiosn matrix</span>
+<span class="comment">% Two hidden states N and M</span>
+<span class="comment">% Four possible observations A, T, C, G</span>
+TRAN = rand(2,2);
+EMIS = rand(2,4);
+
+<span class="comment">% Normalize</span>
+TRAN(1,:) = TRAN(1,:) ./ (norm( TRAN(1,:), 1));
+TRAN(2,:) = TRAN(2,:) ./ (norm( TRAN(2,:), 1));
+EMIS(1,:) = EMIS(1,:) ./ (norm( EMIS(1,:), 1));
+EMIS(2,:) = EMIS(2,:) ./ (norm( EMIS(2,:), 1));
+<span class="comment">% Encode the sequence into integers</span>
+
+seq_int = nt2int(seq);
+
+<span class="comment">% Use hmmtrain to update the transition and emission matrix</span>
+<span class="comment">% hmmtrain estimates the transition and emission probabilities</span>
+<span class="comment">% for a hidden markov model.</span>
+<span class="comment">% Input initial TRAN and EMIS guess, Outputs estimates)</span>
+[TRAN_EST, EMIS_EST] = hmmtrain(seq_int, TRAN, EMIS,<span class="string">'Algorithm'</span>,<span class="string">'Viterbi'</span>);
+
+<span class="comment">% Use hmmviterbi to infer the hidden state of the observations</span>
+STATES = hmmviterbi(seq_int, TRAN_EST, EMIS_EST);
+
+
+
+<span class="comment">% Plot NT density and change points together</span>
+figure(4)
+ntdensity(seq);
+hold <span class="string">on</span>
+plot(STATES-1, <span class="string">'--'</span>)
+hold <span class="string">off</span>
+</pre><img vspace="5" hspace="5" src="Lab7_04.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% ECES T580 Lab 7
+% Bhautik (Brian) Amin
+
+%% Lab 7.1.1
+% Grab sequence data (Only the sequence)
+seq = getgenbank('NC_001416', 'SequenceOnly',true);
+%%
+% Total length of the sequence
+l = length(seq)
+
+%%
+% Measure the local base compositon by
+% Using a sliding window of variable size
+% Plot the density of nucleotides using
+% window size of 2000bp, 3000bp, and 4000bp
+%%
+% 2000 bp:
+figure(1)
+ntdensity(seq, 'Window',2000)
+title({'Window Size', '2000'})
+
+%%
+% 3000 bp:
+figure(2)
+ntdensity(seq, 'Window',3000)
+title({'Window Size', '3000'})
+%%
+% 4000 bp:
+figure(3)
+ntdensity(seq, 'Window',4000)
+title({'Window Size', '4000'})
+
+%% Lab 7.2.1
+
+% Generate random transition and emisiosn matrix
+% Two hidden states N and M
+% Four possible observations A, T, C, G
+TRAN = rand(2,2);
+EMIS = rand(2,4);
+
+% Normalize
+TRAN(1,:) = TRAN(1,:) ./ (norm( TRAN(1,:), 1));
+TRAN(2,:) = TRAN(2,:) ./ (norm( TRAN(2,:), 1));
+EMIS(1,:) = EMIS(1,:) ./ (norm( EMIS(1,:), 1));
+EMIS(2,:) = EMIS(2,:) ./ (norm( EMIS(2,:), 1));
+% Encode the sequence into integers
+
+seq_int = nt2int(seq);
+
+% Use hmmtrain to update the transition and emission matrix
+% hmmtrain estimates the transition and emission probabilities
+% for a hidden markov model. 
+% Input initial TRAN and EMIS guess, Outputs estimates)
+[TRAN_EST, EMIS_EST] = hmmtrain(seq_int, TRAN, EMIS,'Algorithm','Viterbi');
+
+% Use hmmviterbi to infer the hidden state of the observations
+STATES = hmmviterbi(seq_int, TRAN_EST, EMIS_EST);
+
+
+
+% Plot NT density and change points together
+figure(4)
+ntdensity(seq);
+hold on
+plot(STATES-1, 'REPLACE_WITH_DASH_DASH')
+hold off
+
+
+
+##### SOURCE END #####
+--></body></html>

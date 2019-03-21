@@ -1,0 +1,313 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>ECES T580 Lab 8</title><meta name="generator" content="MATLAB 9.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-03-15"><meta name="DC.source" content="Lab8.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>ECES T580 Lab 8</h1><!--introduction--><p>Bhautik (Brian) Amin</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Lab 8.1.1</a></li><li><a href="#12">Lab 8.2.1</a></li><li><a href="#16">Lab 8.3.1</a></li></ul></div><h2 id="1">Lab 8.1.1</h2><p>Load data and extract the fifth non-coding region and coding region</p><pre class="codeinput">clear <span class="string">all</span>; clc;
+hbb = genbankread(<span class="string">'hbb_region_chr11.gb'</span>);
+[Coding, Non] = getCRNCR(hbb, 5);
+Coding = lower(Coding);
+Non = lower(Non); <span class="comment">% Just to make sure everything is lowercase</span>
+</pre><p>Map the two sequences to real number representation A: 1.5, C: 0.5, G: -0.5, T: -1.5</p><pre class="codeinput">Coding = strrep(Coding,<span class="string">'a'</span>,<span class="string">',1.5,'</span>);
+Coding = strrep(Coding,<span class="string">'c'</span>,<span class="string">',0.5,'</span>);
+Coding = strrep(Coding,<span class="string">'g'</span>,<span class="string">',-0.5,'</span>);
+Coding = strrep(Coding,<span class="string">'t'</span>,<span class="string">',-1.5,'</span>);
+</pre><p>Split the comma delimited string into a cell array</p><pre class="codeinput">Coding = strsplit(Coding,<span class="string">','</span>);
+</pre><p>Remove any extra characters (Commas, quotation marks, etc.)</p><pre class="codeinput">Coding = [Coding(1); cellfun(@str2num,Coding(2:end),<span class="string">'un'</span>,0).'];
+</pre><p>Remove whitespace</p><pre class="codeinput">Coding = Coding(~cellfun(@isempty, Coding));
+</pre><p>Convert to mat object</p><pre class="codeinput">Coding = cell2mat(Coding);
+</pre><p>Map the two sequences to real number representation A: 1.5, C: 0.5, G: -0.5, T: -1.5</p><pre class="codeinput">Non = strrep(Non,<span class="string">'a'</span>,<span class="string">',1.5,'</span>);
+Non = strrep(Non,<span class="string">'c'</span>,<span class="string">',0.5,'</span>);
+Non = strrep(Non,<span class="string">'g'</span>,<span class="string">',-0.5,'</span>);
+Non = strrep(Non,<span class="string">'t'</span>,<span class="string">',-1.5,'</span>);
+</pre><p>Split the comma delimited string into a cell array</p><pre class="codeinput">Non = strsplit(Non,<span class="string">','</span>);
+</pre><p>Remove any extra characters (Commas, quotation marks, etc.)</p><pre class="codeinput">Non = [Non(1); cellfun(@str2num,Non(2:end),<span class="string">'un'</span>,0).'];
+</pre><p>Remove whitespace</p><pre class="codeinput">Non = Non(~cellfun(@isempty, Non));
+</pre><p>Convert to mat object</p><pre class="codeinput">Non = cell2mat(Non);
+</pre><h2 id="12">Lab 8.2.1</h2><p>What is H(z) = X_hat(z)/X(z) H(z) describes the transfer function of the filter. Where the input to the filter is X(z), the supposely noisey data and X_hat(z) is the filterd output</p><p>Use the matlab function lpc to estimate the AR coefficients of both coding and noncoding regions (use p=100)</p><pre class="codeinput">[a_coeff_coding, g_coding] = lpc(Coding, 100);
+[a_coeff_noncoding, g_noncoding] = lpc(Non, 100);
+</pre><p>Discrete Transfer Function model for the filter:</p><pre class="codeinput">NUM = [0 -a_coeff_coding(2:end)];
+DENOM = 1;
+sys = filt(NUM, DENOM);
+figure(10)
+pzmap(sys)
+grid <span class="string">on</span>
+
+NUM = [0 -a_coeff_noncoding(2:end)];
+DENOM = 1;
+sys = filt(NUM, DENOM);
+figure(11)
+pzmap(sys)
+grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="Lab8_01.png" alt=""> <img vspace="5" hspace="5" src="Lab8_02.png" alt=""> <h2 id="16">Lab 8.3.1</h2><p>1. Use filter command with the H(z) designed in previous problem. Get predicted x_hat</p><p>Filter arguments (Num Coefficients, Denom Coefficients, Signal)</p><pre class="codeinput">est_coding = filter([0 -a_coeff_coding(2:end)],1,Coding);
+est_noncoding = filter([0 -a_coeff_coding(2:end)],1,Non);
+</pre><p>2. Plot original signal and predicted signal on same plot (Plot subset 201:300)</p><pre class="codeinput">figure(1)
+plot(est_coding(201:300))
+hold <span class="string">on</span>;
+plot(Coding(201:300),<span class="string">'--'</span>)
+title(<span class="string">'Coding Region vs Estimated Coding Region Plot'</span>)
+legend(<span class="string">'LPC Estimate'</span>,<span class="string">'Original Signal'</span>)
+
+figure(2)
+plot(est_noncoding(201:300))
+hold <span class="string">on</span>;
+plot(Non(201:300),<span class="string">'--'</span>)
+title(<span class="string">'Coding Region vs Estimated Coding Region Plot'</span>)
+legend(<span class="string">'LPC Estimate'</span>,<span class="string">'Original Signal'</span>)
+</pre><img vspace="5" hspace="5" src="Lab8_03.png" alt=""> <img vspace="5" hspace="5" src="Lab8_04.png" alt=""> <p>3. Compute MSE between both non-coding and coding sequences and their</p><pre class="codeinput"><span class="comment">%estimated counterparts. Which one is better?</span>
+error_coding = immse(est_coding(201:300), Coding(201:300))
+
+error_noncoding = immse(est_noncoding(201:300), Non(201:300))
+</pre><pre class="codeoutput">
+error_coding =
+
+    0.8032
+
+
+error_noncoding =
+
+    1.8750
+
+</pre><p>We can see from the errors that the coding error between the estimate and the measured is lower than the noncoding region. The estimated coding region is better than the estimated noncoding region. This may be because the noncoding region could have more noise or nonuniformity</p><p>4. Can we use this method to help identify non-coding region? We see that the error corresponds to the coding and non-coding regions above.</p><p>Yes, AR and a correlation method could be used to identify CDS and NCDS for a given sequence. My workflow would be to convert the given hbb into a integer sequence as done before. Run that through LPC and filter the signal to get an estimate. Afer this, getting the residual error between the two for analysis. Using a function like xcorr in MATLAB we can find the lag between the original signal and the filtered signal. These key points could show the correlation between coding and noncoding parts within the signal.</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% ECES T580 Lab 8
+% Bhautik (Brian) Amin
+
+%% Lab 8.1.1
+% Load data and extract the fifth non-coding region and coding region
+clear all; clc;
+hbb = genbankread('hbb_region_chr11.gb');
+[Coding, Non] = getCRNCR(hbb, 5);
+Coding = lower(Coding);
+Non = lower(Non); % Just to make sure everything is lowercase
+
+%%
+% Map the two sequences to real number representation
+% A: 1.5, C: 0.5, G: -0.5, T: -1.5
+
+Coding = strrep(Coding,'a',',1.5,');
+Coding = strrep(Coding,'c',',0.5,');
+Coding = strrep(Coding,'g',',-0.5,');
+Coding = strrep(Coding,'t',',-1.5,');
+%%
+% Split the comma delimited string into a cell array
+Coding = strsplit(Coding,',');
+%%
+% Remove any extra characters (Commas, quotation marks, etc.)
+Coding = [Coding(1); cellfun(@str2num,Coding(2:end),'un',0).'];
+%%
+% Remove whitespace
+Coding = Coding(~cellfun(@isempty, Coding));
+%%
+% Convert to mat object
+Coding = cell2mat(Coding);
+
+%%
+% Map the two sequences to real number representation
+% A: 1.5, C: 0.5, G: -0.5, T: -1.5
+
+Non = strrep(Non,'a',',1.5,');
+Non = strrep(Non,'c',',0.5,');
+Non = strrep(Non,'g',',-0.5,');
+Non = strrep(Non,'t',',-1.5,');
+%%
+% Split the comma delimited string into a cell array
+Non = strsplit(Non,',');
+%%
+% Remove any extra characters (Commas, quotation marks, etc.)
+Non = [Non(1); cellfun(@str2num,Non(2:end),'un',0).'];
+%%
+% Remove whitespace
+Non = Non(~cellfun(@isempty, Non));
+%%
+% Convert to mat object
+Non = cell2mat(Non);
+
+%% Lab 8.2.1
+
+%%
+% What is H(z) = X_hat(z)/X(z)
+% H(z) describes the transfer function of the filter. Where the input
+% to the filter is X(z), the supposely noisey data and X_hat(z) is the
+% filterd output
+
+%%
+% Use the matlab function lpc to estimate the AR coefficients
+% of both coding and noncoding regions (use p=100)
+[a_coeff_coding, g_coding] = lpc(Coding, 100);
+[a_coeff_noncoding, g_noncoding] = lpc(Non, 100);
+
+%%
+% Discrete Transfer Function model for the filter:
+NUM = [0 -a_coeff_coding(2:end)];
+DENOM = 1;
+sys = filt(NUM, DENOM);
+figure(10)
+pzmap(sys)
+grid on
+
+NUM = [0 -a_coeff_noncoding(2:end)];
+DENOM = 1;
+sys = filt(NUM, DENOM);
+figure(11)
+pzmap(sys)
+grid on
+
+%% Lab 8.3.1
+
+%%
+% 1. Use filter command with the H(z) designed in previous problem. Get
+% predicted x_hat
+
+
+%%
+% Filter arguments (Num Coefficients, Denom Coefficients, Signal)
+est_coding = filter([0 -a_coeff_coding(2:end)],1,Coding);
+est_noncoding = filter([0 -a_coeff_coding(2:end)],1,Non);
+
+
+
+%%
+% 2. Plot original signal and predicted signal on same plot (Plot subset
+% 201:300)
+figure(1)
+plot(est_coding(201:300))
+hold on;
+plot(Coding(201:300),'REPLACE_WITH_DASH_DASH')
+title('Coding Region vs Estimated Coding Region Plot')
+legend('LPC Estimate','Original Signal')
+
+figure(2)
+plot(est_noncoding(201:300))
+hold on;
+plot(Non(201:300),'REPLACE_WITH_DASH_DASH')
+title('Coding Region vs Estimated Coding Region Plot')
+legend('LPC Estimate','Original Signal')
+
+
+%%
+% 3. Compute MSE between both non-coding and coding sequences and their
+%estimated counterparts. Which one is better?
+error_coding = immse(est_coding(201:300), Coding(201:300))
+
+error_noncoding = immse(est_noncoding(201:300), Non(201:300))
+
+%%
+% We can see from the errors that the coding error between the estimate and
+% the measured is lower than the noncoding region. The estimated coding
+% region is better than the estimated noncoding region. This may be because
+% the noncoding region could have more noise or nonuniformity
+
+
+%%
+% 4. Can we use this method to help identify non-coding region?
+% We see that the error corresponds to the coding and non-coding regions
+% above. 
+%%
+% Yes, AR and a correlation method could be used to identify CDS and NCDS
+% for a given sequence. My workflow would be to convert the given hbb into
+% a integer sequence as done before. Run that through LPC and filter the
+% signal to get an estimate. Afer this, getting the residual error between
+% the two for analysis. Using a function like xcorr in MATLAB we can find
+% the lag between the original signal and the filtered signal. These key
+% points could show the correlation between coding and noncoding parts
+% within the signal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>
